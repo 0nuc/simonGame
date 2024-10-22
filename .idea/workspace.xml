@@ -5,10 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false"
+        afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false"
+        afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/module-info.java" beforeDir="false"
+        afterPath="$PROJECT_DIR$/simon/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml"
+        beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml"
+        afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/resources/img/2player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/resources/img/3player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/resources/img/4player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false"
+        afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/module-info.java" beforeDir="false"
+        afterPath="$PROJECT_DIR$/simon/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml"
+        beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml"
+        afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml"
+        beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml"
+        afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Color.class"
+        beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Game.class"
+        beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Player.class"
+        beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" beforeDir="false"
+        afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml"
+        beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml"
+        afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/GameService.class"
+        beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/SoundService.class"
+        beforeDir="false" />
+      <change
+        beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/service/impl/GameServiceImpl.class"
+        beforeDir="false" />
+      <change
+        beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/service/impl/SoundServiceImpl.class"
+        beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/module-info.class" beforeDir="false"
+        afterPath="$PROJECT_DIR$/simon/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +70,8 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
+    &quot;associatedIndex&quot;: 2
+    }</component>
   <component name="ProjectId" id="2nnBgzkK3jvgvwfpu15iydeQvwb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,22 +95,27 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\fr\esgi" />
       <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\java\fr\esgi\controller" />
       <recent name="C:\Users\joris\IdeaProjects\simonGame\simon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\img" />
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\fr\esgi\img" />
       <recent name="C:\Users\joris\IdeaProjects\simonGame" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option
+          value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
         <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0"
+    DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="" />
@@ -84,5 +130,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
