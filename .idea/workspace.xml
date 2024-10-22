@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/SoundService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/GameServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/SoundServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/util/ConfigUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/util/TimerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2nnBgzkK3jvgvwfpu15iydeQvwb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,10 +38,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joris/IdeaProjects/simonGame/simon/src/main/java/fr/esgi/controller",
+    "last_opened_file_path": "C:/Users/nicol/OneDrive/Documents/SciencesU/Java/SimonProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
       <workItem from="1729599076035" duration="1272000" />
+      <workItem from="1729605389663" duration="1439000" />
     </task>
     <servers />
   </component>
