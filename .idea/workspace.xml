@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="" />
+    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +31,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joris/IdeaProjects/simonGame",
+    "last_opened_file_path": "C:/Users/joris/IdeaProjects/simonGame/simon/src/main/java/fr/esgi/controller",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -35,6 +40,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\java\fr\esgi\controller" />
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joris\IdeaProjects\simonGame" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -51,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
-      <workItem from="1729599076035" duration="300000" />
+      <workItem from="1729599076035" duration="824000" />
     </task>
     <servers />
   </component>
