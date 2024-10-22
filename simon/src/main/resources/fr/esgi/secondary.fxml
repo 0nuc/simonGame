@@ -41,19 +41,19 @@
                   <Font name="System Bold" size="42.0" />
                </font>
             </Label>
-            <ImageView fitHeight="391.0" fitWidth="391.0" layoutX="994.0" layoutY="319.0">
+            <ImageView fitHeight="451.0" fitWidth="446.0" layoutX="970.0" layoutY="282.0">
                <image>
-                  <Image url="@../Downloads/Nouveau%20projet%20(4).png" />
+                  <Image url="@../../../../../../../../Downloads/Nouveau%20projet%20(4).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="408.0" fitWidth="410.0" layoutX="519.0" layoutY="312.0">
+            <ImageView fitHeight="592.0" fitWidth="595.0" layoutX="433.0" layoutY="201.0">
                <image>
-                  <Image url="@../Downloads/Nouveau%20projet%20(3).png" />
+                  <Image url="@../../../../../../../../Downloads/Nouveau%20projet%20(3).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="438.0" fitWidth="440.0" layoutX="76.0" layoutY="302.0">
+            <ImageView fitHeight="613.0" fitWidth="615.0" layoutX="5.0" layoutY="200.0">
                <image>
-                  <Image url="@../Downloads/Nouveau%20projet%20(2).png" />
+                  <Image url="@../../../../../../../../Downloads/Nouveau%20projet%20(2).png" />
                </image>
             </ImageView>
          </children>
