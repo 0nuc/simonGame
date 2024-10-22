@@ -41,7 +41,7 @@
                pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image
-                     url="@../../../../../../../../../../../Downloads/DALL_E_2024-10-22_15.11.10_-_A_different_circular_logo_design_for_a_Simon_game._The_outer_ring_uses_the_color__463F3F__with_a_sleek_inner_circle_in__1A1A1A__and_accents_of__fff__w_1__1_-removebg-previ.png" />
+                     url="@logo.png" />
                </image>
             </ImageView>
          </children>
