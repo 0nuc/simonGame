@@ -5,16 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Score.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/SoundService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/GameServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/SoundServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/util/ConfigUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/util/TimerUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joris/IdeaProjects/simonGame/simon/src/main/java/fr/esgi/controller",
+    "last_opened_file_path": "C:/Users/joris/IdeaProjects/burger",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
-      <workItem from="1729599076035" duration="1272000" />
+      <workItem from="1729599076035" duration="2202000" />
     </task>
     <servers />
   </component>
