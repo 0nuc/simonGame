@@ -1,4 +1,4 @@
 package fr.esgi.business;
 
-public class Color {
+public class Couleur {
 }
