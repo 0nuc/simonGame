@@ -5,15 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/GameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/SoundService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/GameServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/SoundServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/util/ConfigUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/util/TimerUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
-      <workItem from="1729599076035" duration="824000" />
+      <workItem from="1729599076035" duration="1272000" />
     </task>
     <servers />
   </component>
