@@ -1,8 +1,42 @@
-# Default ignored files
+# IntelliJ IDEA project files
 /shelf/
 /workspace.xml
-# Editor-based HTTP Client requests
 /httpRequests/
-# Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Java specific files
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Maven specific files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle specific files
+.gradle/
+build/
+out/
+!gradle-wrapper.jar
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# JavaFX specific files
+*.fxml
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
