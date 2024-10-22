@@ -43,17 +43,17 @@
             </Label>
             <ImageView fitHeight="451.0" fitWidth="446.0" layoutX="970.0" layoutY="282.0">
                <image>
-                  <Image url="@../../../../../../../../Downloads/Nouveau%20projet%20(4).png" />
+                  <Image url="@/img/4player.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="592.0" fitWidth="595.0" layoutX="433.0" layoutY="201.0">
+            <ImageView fitHeight="592.0" fitWidth="595.0" layoutX="438.0" layoutY="201.0">
                <image>
-                  <Image url="@../../../../../../../../Downloads/Nouveau%20projet%20(3).png" />
+                  <Image url="@/img/3player.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="613.0" fitWidth="615.0" layoutX="5.0" layoutY="200.0">
+            <ImageView fitHeight="613.0" fitWidth="615.0" layoutX="8.0" layoutY="200.0">
                <image>
-                  <Image url="@../../../../../../../../Downloads/Nouveau%20projet%20(2).png" />
+                  <Image url="@/img/2player.png" />
                </image>
             </ImageView>
          </children>

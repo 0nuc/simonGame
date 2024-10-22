@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Joueur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Jeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/business/Couleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/JeuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/SoundService.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/SonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/GameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/JeuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/SoundServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/service/service/impl/SonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/resources/img/2player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/resources/img/3player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/main/resources/img/4player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/GameService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/SoundService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/service/impl/GameServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/service/impl/SoundServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +50,9 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joris/IdeaProjects/burger",
+    "last_opened_file_path": "C:/Users/joris/IdeaProjects/simonGame/simon/src/main/resources/fr/esgi",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,10 +63,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\fr\esgi" />
       <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\java\fr\esgi\controller" />
       <recent name="C:\Users\joris\IdeaProjects\simonGame\simon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\img" />
+      <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\fr\esgi\img" />
       <recent name="C:\Users\joris\IdeaProjects\simonGame" />
     </key>
   </component>
@@ -76,11 +89,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
-      <workItem from="1729599076035" duration="2530000" />
+      <workItem from="1729599076035" duration="4062000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
