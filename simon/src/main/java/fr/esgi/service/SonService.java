@@ -1,4 +1,4 @@
 package fr.esgi.service;
 
-public class GameService {
+public class SonService {
 }

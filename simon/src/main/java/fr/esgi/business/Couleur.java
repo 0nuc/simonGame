@@ -1,4 +1,4 @@
 package fr.esgi.business;
 
-public class Game {
+public class Couleur {
 }

@@ -1,4 +1,4 @@
 package fr.esgi.business;
 
-public class Player {
+public class Joueur {
 }
