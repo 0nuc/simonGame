@@ -1,4 +1,4 @@
 package fr.esgi.service.service.impl;
 
-public class SoundServiceImpl {
+public class JeuServiceImpl {
 }
