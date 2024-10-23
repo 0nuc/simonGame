@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" minHeight="1085.0" minWidth="1500.0" spacing="20.0" style="-fx-background-color: #463F3F;"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fr.esgi.controller.PlayerNameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <AnchorPane prefHeight="1091.0" prefWidth="1460.0">
+        <Label layoutX="378.0" layoutY="78.0" text="SIMON GAME" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="96.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="603.0" fitWidth="640.0" layoutX="853.0" layoutY="311.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@logo.png"/>
+        </ImageView>
+        <Label layoutX="106.0" layoutY="289.0" text="Saisir le prénom des joueurs" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="35.0"/>
+            </font>
+        </Label>
+
+        <VBox fx:id="playerNameFields" layoutX="106.0" layoutY="340.0" spacing="10.0"/>
+
+    </AnchorPane>
+</VBox>
