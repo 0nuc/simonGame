@@ -2,8 +2,6 @@ package fr.esgi.business;
 
 import fr.esgi.service.JeuService;
 import fr.esgi.service.SonService;
-import fr.esgi.service.impl.JeuServiceImpl;
-import fr.esgi.service.impl.SonServiceImpl;
 
 import java.util.List;
 
@@ -12,10 +10,10 @@ public class Jeu {
     private JeuService jeuService;
     private SonService sonService;
 
-    public Jeu(List<Joueur> joueurs) {
+    public Jeu(List<Joueur> joueurs, JeuService jeuService, SonService sonService) {
         this.joueurs = joueurs;
-        this.jeuService = new JeuServiceImpl();
-        this.sonService = new SonServiceImpl();
+        this.jeuService = jeuService;
+        this.sonService = sonService;
     }
 
     public void start() {
