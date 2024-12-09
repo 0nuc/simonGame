@@ -1,4 +1,18 @@
 package fr.esgi.service.impl;
 
-public class JeuServiceImpl {
+import fr.esgi.service.JeuService;
+
+public class JeuServiceImpl implements JeuService {
+
+    @Override
+    public void startGame() {
+        // Implémentation pour démarrer le jeu
+        System.out.println("Game started");
+    }
+
+    @Override
+    public void endGame() {
+        // Implémentation pour terminer le jeu
+        System.out.println("Game ended");
+    }
 }

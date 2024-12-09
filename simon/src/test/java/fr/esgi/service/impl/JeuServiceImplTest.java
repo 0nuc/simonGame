@@ -1,6 +1,27 @@
 package fr.esgi.service.impl;
 
-class JeuServiceImplTest {
-}
+import fr.esgi.service.JeuService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-//Generated with love by TestMe :) Please raise issues & feature requests at: https://weirddev.com/forum#!/testme
+class JeuServiceImplTest {
+
+    private JeuService jeuService;
+
+    @BeforeEach
+    void setUp() {
+        jeuService = new JeuServiceImpl();
+    }
+
+    @Test
+    void testStartGame() {
+        jeuService.startGame();
+        // Ajoutez des assertions pour vérifier le comportement
+    }
+
+    @Test
+    void testEndGame() {
+        jeuService.endGame();
+        // Ajoutez des assertions pour vérifier le comportement
+    }
+}

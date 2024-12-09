@@ -1,6 +1,25 @@
 package fr.esgi.service.impl;
 
-class SonServiceImplTest {
-}
+import fr.esgi.service.SonService;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-//Generated with love by TestMe :) Please raise issues & feature requests at: https://weirddev.com/forum#!/testme
+class SonServiceImplTest {
+
+    private SonService sonService;
+
+    @BeforeEach
+    void setUp() {
+        sonService = (SonService) new SonServiceImpl();
+    }
+
+    @Test
+    void testPlaySound() {
+        sonService.playSound("testSound");
+    }
+
+    @Test
+    void testStopSound() {
+        sonService.stopSound();
+    }
+}
