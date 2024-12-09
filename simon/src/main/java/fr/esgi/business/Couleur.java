@@ -1,4 +1,8 @@
 package fr.esgi.business;
 
-public class Couleur {
+public enum Couleur {
+    ROUGE,
+    VERT,
+    BLEU,
+    JAUNE
 }
