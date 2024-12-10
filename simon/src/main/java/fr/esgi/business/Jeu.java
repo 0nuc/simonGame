@@ -6,6 +6,7 @@ import fr.esgi.service.SonService;
 import java.util.List;
 
 public class Jeu {
+
     private List<Joueur> joueurs;
     private JeuService jeuService;
     private SonService sonService;
@@ -34,3 +35,4 @@ public class Jeu {
         this.joueurs = joueurs;
     }
 }
+
