@@ -12,8 +12,6 @@ import java.util.Objects;
 @Data
 public class Jeu {
 
-    @Getter
-    @Setter
     private List<Joueur> joueurs;
 
     private JeuService jeuService;
