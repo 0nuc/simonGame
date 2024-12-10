@@ -87,7 +87,7 @@
       <recent name="C:\Users\joris\IdeaProjects\simonGame" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.fr.esgi.business in simon">
+  <component name="RunManager" selected="JUnit.fr.esgi in simon">
     <configuration name="JeuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simon" />
       <extension name="coverage">
@@ -141,9 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.fr.esgi in simon" />
         <item itemvalue="JUnit.fr.esgi.business in simon" />
         <item itemvalue="JUnit.JeuTest" />
-        <item itemvalue="JUnit.fr.esgi in simon" />
         <item itemvalue="JUnit.esgi in simon" />
       </list>
     </recent_temporary>
