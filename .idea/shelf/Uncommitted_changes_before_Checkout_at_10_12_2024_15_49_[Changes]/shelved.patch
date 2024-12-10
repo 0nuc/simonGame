@@ -1,0 +1,16 @@
+Index: simon/src/test/java/fr/esgi/service/impl/SonServiceImplTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package fr.esgi.service.impl;\r\n\r\nimport fr.esgi.service.SonService;\r\nimport org.junit.jupiter.api.BeforeEach;\r\nimport org.junit.jupiter.api.Test;\r\n\r\nclass SonServiceImplTest {\r\n\r\n    private SonService sonService;\r\n\r\n    @BeforeEach\r\n    void setUp() {\r\n        sonService = (SonService) new SonServiceImpl();\r\n    }\r\n\r\n    @Test\r\n    void testPlaySound() {\r\n        sonService.playSound(\"testSound\");\r\n    }\r\n\r\n    @Test\r\n    void testStopSound() {\r\n        sonService.stopSound();\r\n    }\r\n}
+===================================================================
+diff --git a/simon/src/test/java/fr/esgi/service/impl/SonServiceImplTest.java b/simon/src/test/java/fr/esgi/service/impl/SonServiceImplTest.java
+--- a/simon/src/test/java/fr/esgi/service/impl/SonServiceImplTest.java	(revision bd7130d91ff3f8f593ae973c0c0944f1ff693a47)
++++ b/simon/src/test/java/fr/esgi/service/impl/SonServiceImplTest.java	(date 1733814613353)
+@@ -22,4 +22,4 @@
+     void testStopSound() {
+         sonService.stopSound();
+     }
+-}
+\ No newline at end of file
++} 
+\ No newline at end of file

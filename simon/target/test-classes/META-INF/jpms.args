@@ -1,0 +1,4 @@
+--patch-module
+fr.esgi=_
+--add-reads
+fr.esgi=ALL-UNNAMED
