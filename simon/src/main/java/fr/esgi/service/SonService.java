@@ -1,4 +1,7 @@
 package fr.esgi.service;
 
-public class SonService {
+public interface SonService {
+    void playSound(String sound);
+
+    void stopSound();
 }

@@ -1,4 +1,7 @@
 package fr.esgi.service;
 
-public class JeuService {
+public interface JeuService {
+    void startGame();
+
+    void endGame();
 }
