@@ -1,5 +1,8 @@
 package fr.esgi.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,13 +14,13 @@ import javafx.stage.Stage;
 public class PlayerNameController {
 
     @FXML
-    private VBox playerNameFields;  // VBox pour accueillir les champs de texte
+    private VBox playerNameFields; // VBox pour accueillir les champs de texte
 
     @FXML
-    private Button btnRetour;  // Bouton retour
+    private Button btnRetour; // Bouton retour
 
     @FXML
-    private Button btnSuivant;  // Bouton suivant
+    private Button btnSuivant; // Bouton suivant
 
     public void initialize() {
         // Action pour le bouton retour
@@ -36,32 +39,57 @@ public class PlayerNameController {
         // Action pour le bouton suivant
         btnSuivant.setOnAction(event -> {
             try {
+                // Collecter les noms des joueurs
+                List<String> playerNames = new ArrayList<>();
+                playerNameFields.getChildren().forEach(node -> {
+                    if (node instanceof TextField) {
+                        String playerName = ((TextField) node).getText().trim();
+                        if (!playerName.isEmpty()) {
+                            playerNames.add(playerName);
+                        }
+                    }
+                });
+
+                if (playerNames.isEmpty()) {
+                    System.out.println("Veuillez ajouter au moins un joueur !");
+                    return;
+                }
+
                 // Charger la page de jeu
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/gamePage.fxml"));
                 Stage stage = (Stage) btnSuivant.getScene().getWindow();
                 stage.setScene(new Scene(loader.load()));
+
+                // Transmettre les noms des joueurs au GameController
+                GameController gameController = loader.getController();
+                gameController.setPlayers(playerNames);
+
                 stage.show();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         });
+
     }
 
     public void setNumberOfPlayers(int numberOfPlayers) {
-        playerNameFields.getChildren().clear();  // Effacer les anciens champs
+        playerNameFields.getChildren().clear(); // Effacer les anciens champs
 
         // Définir les couleurs de bordure pour chaque joueur
-        String[] borderColors = {"green", "blue", "red", "yellow"};
+        String[] borderColors = { "green", "blue", "red", "yellow" };
 
         // Afficher le nombre approprié de champs de texte
         for (int i = 1; i <= numberOfPlayers; i++) {
             TextField textField = new TextField();
             textField.setPromptText("Joueur " + i);
-            textField.setPrefWidth(400);  // Largeur préférée
-            textField.setPrefHeight(50);   // Hauteur préférée
+            textField.setPrefWidth(400); // Largeur préférée
+            textField.setPrefHeight(50); // Hauteur préférée
             // Appliquer la couleur de bordure en fonction de l'index
-            String borderColor = (i - 1 < borderColors.length) ? borderColors[i - 1] : "black"; // Utiliser "black" par défaut si plus de 4 joueurs
-            textField.setStyle("-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: " + borderColor + ";");
+            String borderColor = (i - 1 < borderColors.length) ? borderColors[i - 1] : "black"; // Utiliser "black" par
+                                                                                                // défaut si plus de 4
+                                                                                                // joueurs
+            textField.setStyle("-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: "
+                    + borderColor + ";");
             playerNameFields.getChildren().add(textField);
         }
     }

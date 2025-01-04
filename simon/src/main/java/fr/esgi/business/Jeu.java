@@ -11,6 +11,9 @@ public class Jeu {
     private JeuService jeuService;
     private SonService sonService;
 
+    public Jeu() {
+    }
+
     public Jeu(List<Joueur> joueurs, JeuService jeuService, SonService sonService) {
         this.joueurs = joueurs;
         this.jeuService = jeuService;
@@ -35,4 +38,3 @@ public class Jeu {
         this.joueurs = joueurs;
     }
 }
-
