@@ -24,12 +24,22 @@
                   <Font size="29.0" />
                </font>
             </Label>
-            <TextField layoutX="38.0" layoutY="291.0" prefHeight="25.0" prefWidth="750.0" promptText="Joueur 1" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: green;">
+            <TextField layoutX="38.0" layoutY="291.0" prefHeight="61.0" prefWidth="1158.0" promptText="Joueur 1" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: green;">
                <font>
                   <Font name="System Italic" size="28.0" />
                </font>
             </TextField>
-            <TextField layoutX="40.0" layoutY="412.0" prefHeight="25.0" prefWidth="750.0" promptText="Joueur 2" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: green;">
+            <TextField layoutX="40.0" layoutY="412.0" prefHeight="61.0" prefWidth="1155.0" promptText="Joueur 2" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: blue;">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="43.0" layoutY="542.0" prefHeight="61.0" prefWidth="1151.0" promptText="Joueur 3" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: Red;">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="48.0" layoutY="674.0" prefHeight="61.0" prefWidth="1149.0" promptText="Joueur 3" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: yellow;">
                <font>
                   <Font name="System Italic" size="28.0" />
                </font>
