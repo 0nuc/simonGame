@@ -9,9 +9,9 @@
 <?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" minHeight="1085.0" minWidth="1500.0" spacing="20.0" style="-fx-background-color: #463F3F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.esgi.controller.PlayerNameController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
    <children>
       <AnchorPane prefHeight="1084.0" prefWidth="1460.0">
          <children>
@@ -25,32 +25,15 @@
                   <Font size="29.0" />
                </font>
             </Label>
-            <TextField layoutX="38.0" layoutY="291.0" prefHeight="61.0" prefWidth="1158.0" promptText="Joueur 1" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: green;">
-               <font>
-                  <Font name="System Italic" size="28.0" />
-               </font>
-            </TextField>
-            <TextField layoutX="40.0" layoutY="412.0" prefHeight="61.0" prefWidth="1155.0" promptText="Joueur 2" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: blue;">
-               <font>
-                  <Font name="System Italic" size="28.0" />
-               </font>
-            </TextField>
-            <TextField layoutX="43.0" layoutY="542.0" prefHeight="61.0" prefWidth="1151.0" promptText="Joueur 3" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: Red;">
-               <font>
-                  <Font name="System Italic" size="28.0" />
-               </font>
-            </TextField>
-            <TextField layoutX="48.0" layoutY="674.0" prefHeight="61.0" prefWidth="1149.0" promptText="Joueur 3" style="-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: yellow;">
-               <font>
-                  <Font name="System Italic" size="28.0" />
-               </font>
-            </TextField>
-            <Button layoutX="961.0" layoutY="967.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="RETOUR" textFill="WHITE">
+            <VBox fx:id="playerNameFields" layoutX="38.0" layoutY="291.0" spacing="10.0">
+               <!-- Les champs de texte seront ajoutés ici dynamiquement -->
+            </VBox>
+            <Button fx:id="btnRetour" layoutX="961.0" layoutY="967.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="RETOUR" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="26.0" />
                </font>
             </Button>
-            <Button layoutX="1159.0" layoutY="967.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="SUIVANT" textFill="WHITE">
+            <Button fx:id="btnSuivant" layoutX="1159.0" layoutY="967.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="SUIVANT" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="26.0" />
                </font>
