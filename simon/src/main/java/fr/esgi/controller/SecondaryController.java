@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import javafx.scene.layout.VBox;
 
 public class SecondaryController {
 

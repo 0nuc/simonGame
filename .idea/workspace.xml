@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PlayerNameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PlayerNameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Jeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Jeu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/playerName.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/playerName.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/JeuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/JeuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/SonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/SonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/test-classes/META-INF/jpms.args" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/test-classes/fr/esgi/service/impl/JeuServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/test-classes/fr/esgi/service/impl/JeuServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/test-classes/fr/esgi/service/impl/SonServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/test-classes/fr/esgi/service/impl/SonServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +47,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.fr.esgi in simon.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "joris",
     "kotlin-language-version-configured": "true",
@@ -63,7 +72,20 @@
       <recent name="C:\Users\joris\IdeaProjects\simonGame" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.fr.esgi in simon">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.esgi.App" />
+      <module name="simon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.esgi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JeuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simon" />
       <extension name="coverage">
@@ -117,6 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.fr.esgi in simon" />
         <item itemvalue="JUnit.fr.esgi.business in simon" />
         <item itemvalue="JUnit.JeuTest" />
@@ -141,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
       <workItem from="1729599076035" duration="4062000" />
-      <workItem from="1735993771828" duration="1546000" />
+      <workItem from="1735993771828" duration="2024000" />
     </task>
     <servers />
   </component>
