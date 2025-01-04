@@ -1,8 +1,5 @@
 package fr.esgi.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,6 +7,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PlayerNameController {
 
@@ -22,11 +22,16 @@ public class PlayerNameController {
     @FXML
     private Button btnSuivant; // Bouton suivant
 
+    private int numberOfPlayers = 2; // Par défaut, deux joueurs
+
     public void initialize() {
+        // Charger les champs pour le nombre de joueurs par défaut
+        loadPlayerNameFields();
+
         // Action pour le bouton retour
         btnRetour.setOnAction(event -> {
             try {
-                // Charger la scène secondaire
+                // Charger la scène précédente
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/secondary.fxml"));
                 Stage stage = (Stage) btnRetour.getScene().getWindow();
                 stage.setScene(new Scene(loader.load()));
@@ -39,19 +44,11 @@ public class PlayerNameController {
         // Action pour le bouton suivant
         btnSuivant.setOnAction(event -> {
             try {
-                // Collecter les noms des joueurs
-                List<String> playerNames = new ArrayList<>();
-                playerNameFields.getChildren().forEach(node -> {
-                    if (node instanceof TextField) {
-                        String playerName = ((TextField) node).getText().trim();
-                        if (!playerName.isEmpty()) {
-                            playerNames.add(playerName);
-                        }
-                    }
-                });
+                // Récupérer les noms des joueurs
+                List<String> playerNames = getPlayerNames();
 
                 if (playerNames.isEmpty()) {
-                    System.out.println("Veuillez ajouter au moins un joueur !");
+                    System.out.println("Erreur : Aucun nom de joueur renseigné !");
                     return;
                 }
 
@@ -60,7 +57,7 @@ public class PlayerNameController {
                 Stage stage = (Stage) btnSuivant.getScene().getWindow();
                 stage.setScene(new Scene(loader.load()));
 
-                // Transmettre les noms des joueurs au GameController
+                // Passer les noms des joueurs au GameController
                 GameController gameController = loader.getController();
                 gameController.setPlayers(playerNames);
 
@@ -69,10 +66,9 @@ public class PlayerNameController {
                 e.printStackTrace();
             }
         });
-
     }
 
-    public void setNumberOfPlayers(int numberOfPlayers) {
+    private void loadPlayerNameFields() {
         playerNameFields.getChildren().clear(); // Effacer les anciens champs
 
         // Définir les couleurs de bordure pour chaque joueur
@@ -81,16 +77,34 @@ public class PlayerNameController {
         // Afficher le nombre approprié de champs de texte
         for (int i = 1; i <= numberOfPlayers; i++) {
             TextField textField = new TextField();
-            textField.setPromptText("Joueur " + i);
+            textField.setPromptText("Nom du Joueur " + i);
             textField.setPrefWidth(400); // Largeur préférée
             textField.setPrefHeight(50); // Hauteur préférée
+
             // Appliquer la couleur de bordure en fonction de l'index
-            String borderColor = (i - 1 < borderColors.length) ? borderColors[i - 1] : "black"; // Utiliser "black" par
-                                                                                                // défaut si plus de 4
-                                                                                                // joueurs
+            String borderColor = (i - 1 < borderColors.length) ? borderColors[i - 1] : "black";
             textField.setStyle("-fx-background-color: none; -fx-border-width: 0px 0px 3px; -fx-border-color: "
                     + borderColor + ";");
+
             playerNameFields.getChildren().add(textField);
         }
+    }
+
+    private List<String> getPlayerNames() {
+        List<String> playerNames = new ArrayList<>();
+        for (var child : playerNameFields.getChildren()) {
+            if (child instanceof TextField) {
+                String name = ((TextField) child).getText().trim();
+                if (!name.isEmpty()) {
+                    playerNames.add(name);
+                }
+            }
+        }
+        return playerNames;
+    }
+
+    public void setNumberOfPlayers(int numberOfPlayers) {
+        this.numberOfPlayers = numberOfPlayers;
+        loadPlayerNameFields();
     }
 }
