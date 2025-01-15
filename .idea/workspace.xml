@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/CreditsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +164,7 @@
       <updated>1729599074925</updated>
       <workItem from="1729599076035" duration="4062000" />
       <workItem from="1735993771828" duration="3920000" />
-      <workItem from="1736967638865" duration="774000" />
+      <workItem from="1736967638865" duration="2040000" />
     </task>
     <servers />
   </component>

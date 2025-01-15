@@ -14,7 +14,7 @@
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
    <AnchorPane prefHeight="1091.0" prefWidth="1460.0">
-      <Button layoutX="89.0" layoutY="396.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="SOLO" textFill="WHITE">
+      <Button fx:id="btnSolo" layoutX="89.0" layoutY="396.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" onAction="#handleSoloClick" text="SOLO" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
@@ -24,7 +24,7 @@
             <Font name="System Bold" size="38.0" />
          </font>
       </Button>
-      <Button layoutX="89.0" layoutY="513.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="CRÉDIT" textFill="WHITE">
+      <Button fx:id="btnCredits" layoutX="89.0" layoutY="513.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0"  onAction="#handleCreditsClick"  style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="CRÉDIT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>

@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
 public class SecondaryController {
 
@@ -18,11 +19,27 @@ public class SecondaryController {
     private Circle circle4;  // Lié à circle4 dans le FXML
 
     @FXML
+    private Button btnRetour;  // Bouton retour
+
+    @FXML
     public void initialize() {
         // Ajouter des événements de clic pour chaque cercle
         circle2.setOnMouseClicked(event -> openPlayerNameScreen(2));
         circle3.setOnMouseClicked(event -> openPlayerNameScreen(3));
         circle4.setOnMouseClicked(event -> openPlayerNameScreen(4));
+
+        // Action pour le bouton retour
+        btnRetour.setOnAction(event -> {
+            try {
+                // Charger la page principale
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/primary.fxml"));
+                Stage stage = (Stage) btnRetour.getScene().getWindow();
+                stage.setScene(new Scene(loader.load()));
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     private void openPlayerNameScreen(int numberOfPlayers) {
