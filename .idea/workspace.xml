@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -37,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "JUnit.fr.esgi in simon.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "joris",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joris/Documents/simonGame",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.fr.esgi in simon.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;joris&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/joris/Documents/simonGame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\fr\esgi" />
@@ -157,7 +160,8 @@
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
       <workItem from="1729599076035" duration="4062000" />
-      <workItem from="1735993771828" duration="3687000" />
+      <workItem from="1735993771828" duration="3920000" />
+      <workItem from="1736967638865" duration="774000" />
     </task>
     <servers />
   </component>

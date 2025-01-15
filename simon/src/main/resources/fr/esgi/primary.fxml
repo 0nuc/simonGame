@@ -19,7 +19,12 @@
             <Font name="System Bold" size="38.0" />
          </font>
       </Button>
-      <Button fx:id="multijoueurButton" layoutX="81.0" layoutY="630.0" mnemonicParsing="false" onAction="#handleMultijoueurClick" prefHeight="121.0" prefWidth="582.0" style="-fx-background-color: none; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 5;" text="MULIJOUEUR" textFill="WHITE">
+      <Button fx:id="multijoueurButton" layoutX="81.0" layoutY="630.0" mnemonicParsing="false" onAction="#handleMultijoueurClick" prefHeight="121.0" prefWidth="582.0" style="-fx-background-color: none; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 5;" text="MULTIJOUEUR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button layoutX="89.0" layoutY="513.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="CRÉDIT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
