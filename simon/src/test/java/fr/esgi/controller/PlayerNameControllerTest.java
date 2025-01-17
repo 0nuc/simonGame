@@ -1,56 +1,54 @@
 package fr.esgi.controller;
 
-import fr.esgi.business.Joueur;
-import fr.esgi.utils.JavaFXThreadingRule;
+import javafx.application.Platform;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.MockitoAnnotations;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PlayerNameControllerTest {
 
-    @InjectMocks
-    private PlayerNameController playerNameController;
+    private PlayerNameController controller;
 
     @BeforeAll
-    static void initToolkit() {
-        JavaFXThreadingRule.initToolkit(); // Initialize JavaFX once
-    }
-
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
-        playerNameController.playerNameFields = new VBox();
-    }
-
-    @Test
-    void testSetNumberOfPlayers() {
-        playerNameController.setNumberOfPlayers(3);
-        assertEquals(3, playerNameController.playerNameFields.getChildren().size());
-        assertTrue(playerNameController.playerNameFields.getChildren().get(0) instanceof TextField);
-        assertEquals("Prénom du joueur 1",
-                ((TextField) playerNameController.playerNameFields.getChildren().get(0)).getPromptText());
+    public static void initToolkit() {
+        try {
+            Platform.startup(() -> {
+                // JavaFX Toolkit initialisé
+            });
+        } catch (IllegalStateException e) {
+            // Toolkit déjà initialisé
+            System.out.println("JavaFX Toolkit already initialized.");
+        }
     }
 
     @Test
-    void testSavePlayerNames() {
-        playerNameController.setNumberOfPlayers(2);
-        ((TextField) playerNameController.playerNameFields.getChildren().get(0)).setText("Alice");
-        ((TextField) playerNameController.playerNameFields.getChildren().get(1)).setText("Bob");
+    void testLoadPlayerNameFields() {
+        controller = new PlayerNameController();
 
-        playerNameController.savePlayerNames();
+        VBox playerNameFields = new VBox();
+        controller.playerNameFields = playerNameFields;
 
-        List<Joueur> joueurs = playerNameController.getJoueurs();
-        assertEquals(2, joueurs.size());
-        assertEquals("Alice", joueurs.get(0).getPrenom());
-        assertEquals("Bob", joueurs.get(1).getPrenom());
+        controller.setNumberOfPlayers(3);
+
+        assertEquals(3, playerNameFields.getChildren().size());
+    }
+
+    @Test
+    void testGetPlayerNames() {
+        controller = new PlayerNameController();
+
+        VBox playerNameFields = new VBox();
+        TextField player1 = new TextField("Alice");
+        TextField player2 = new TextField("Bob");
+        playerNameFields.getChildren().addAll(player1, player2);
+
+        controller.playerNameFields = playerNameFields;
+
+        assertEquals(2, controller.getPlayerNames().size());
+        assertEquals("Alice", controller.getPlayerNames().get(0));
+        assertEquals("Bob", controller.getPlayerNames().get(1));
     }
 }

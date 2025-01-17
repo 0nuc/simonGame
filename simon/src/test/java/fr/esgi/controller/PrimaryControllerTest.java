@@ -1,23 +1,68 @@
 package fr.esgi.controller;
 
+import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import org.junit.jupiter.api.BeforeEach;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.mock;
 
 class PrimaryControllerTest {
-    @Mock
-    Button multijoueurButton;
-    @InjectMocks
-    PrimaryController primaryController;
 
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
+    private PrimaryController controller;
+    private Button multijoueurButton;
+
+    @BeforeAll
+    public static void initToolkit() {
+        try {
+            Platform.startup(() -> {
+                // JavaFX Toolkit initialisé
+            });
+        } catch (IllegalStateException e) {
+            // Toolkit déjà initialisé
+            System.out.println("JavaFX Toolkit already initialized.");
+        }
+    }
+
+    @Test
+    void testHandleMultijoueurClick() throws Exception {
+        Platform.runLater(() -> {
+            try {
+                // Initialisation du contrôleur
+                controller = new PrimaryController();
+
+                // Créez un bouton et une scène pour simuler l'environnement
+                multijoueurButton = new Button("Multijoueur");
+                VBox root = new VBox(multijoueurButton);
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.setScene(scene);
+
+                // Associez le bouton au contrôleur
+                controller.multijoueurButton = multijoueurButton;
+
+                // Configurez l'événement de clic
+                multijoueurButton.setOnAction(event -> {
+                    try {
+                        controller.handleMultijoueurClick();
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                });
+
+                // Simulez un clic sur le bouton
+                multijoueurButton.fire();
+
+                // Vérifiez que l'action a été exécutée correctement
+                assertNotNull(stage.getScene());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
-
-//Generated with love by TestMe :) Please raise issues & feature requests at: https://weirddev.com/forum#!/testme

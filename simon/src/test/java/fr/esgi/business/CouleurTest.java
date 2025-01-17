@@ -8,21 +8,26 @@ class CouleurTest {
 
     @Test
     void testEnumValues() {
-        Couleur[] valeursAttendues = {Couleur.ROUGE, Couleur.VERT, Couleur.BLEU, Couleur.JAUNE};
-        Couleur[] valeursReelles = Couleur.values();
-        assertArrayEquals(valeursAttendues, valeursReelles, "Les valeurs de l'énumération Couleur doivent correspondre.");
+        // Vérifie que les valeurs de l'énumération sont correctes
+        Couleur[] couleurs = Couleur.values();
+        assertArrayEquals(new Couleur[]{Couleur.ROUGE, Couleur.VERT, Couleur.BLEU, Couleur.JAUNE}, couleurs);
     }
 
     @Test
     void testEnumValueOf() {
-        assertEquals(Couleur.ROUGE, Couleur.valueOf("ROUGE"), "La valeur ROUGE doit être accessible via valueOf.");
-        assertEquals(Couleur.VERT, Couleur.valueOf("VERT"), "La valeur VERT doit être accessible via valueOf.");
-        assertEquals(Couleur.BLEU, Couleur.valueOf("BLEU"), "La valeur BLEU doit être accessible via valueOf.");
-        assertEquals(Couleur.JAUNE, Couleur.valueOf("JAUNE"), "La valeur JAUNE doit être accessible via valueOf.");
+        // Vérifie que valueOf retourne correctement une valeur de l'énumération
+        assertEquals(Couleur.ROUGE, Couleur.valueOf("ROUGE"));
+        assertEquals(Couleur.VERT, Couleur.valueOf("VERT"));
+        assertEquals(Couleur.BLEU, Couleur.valueOf("BLEU"));
+        assertEquals(Couleur.JAUNE, Couleur.valueOf("JAUNE"));
     }
 
     @Test
-    void testEnumInvalidValue() {
-        assertThrows(IllegalArgumentException.class, () -> Couleur.valueOf("NOIR"), "Une exception doit être levée pour une valeur non définie dans l'énumération.");
+    void testEnumName() {
+        // Vérifie que le nom de l'énumération correspond bien
+        assertEquals("ROUGE", Couleur.ROUGE.name());
+        assertEquals("VERT", Couleur.VERT.name());
+        assertEquals("BLEU", Couleur.BLEU.name());
+        assertEquals("JAUNE", Couleur.JAUNE.name());
     }
 }

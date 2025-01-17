@@ -9,13 +9,13 @@ import javafx.stage.Stage;
 public class SecondaryController {
 
     @FXML
-    private Circle circle2;  // Lié à circle2 dans le FXML
+    Circle circle2;  // Lié à circle2 dans le FXML
 
     @FXML
-    private Circle circle3;  // Lié à circle3 dans le FXML
+    Circle circle3;  // Lié à circle3 dans le FXML
 
     @FXML
-    private Circle circle4;  // Lié à circle4 dans le FXML
+    Circle circle4;  // Lié à circle4 dans le FXML
 
     @FXML
     public void initialize() {
@@ -25,7 +25,7 @@ public class SecondaryController {
         circle4.setOnMouseClicked(event -> openPlayerNameScreen(4));
     }
 
-    private void openPlayerNameScreen(int numberOfPlayers) {
+    void openPlayerNameScreen(int numberOfPlayers) {
         try {
             // Charger le fichier FXML pour playerName.fxml
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/playerName.fxml"));

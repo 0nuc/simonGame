@@ -13,27 +13,27 @@ import java.util.Random;
 public class GameController {
 
     @FXML
-    private Button btnRed;
+    Button btnRed;
 
     @FXML
-    private Button btnBlue;
+    Button btnBlue;
 
     @FXML
-    private Button btnGreen;
+    Button btnGreen;
 
     @FXML
-    private Button btnYellow;
+    Button btnYellow;
 
     @FXML
-    private Button btnStart;
+    Button btnStart;
 
     @FXML
-    private Button btnRestart;
+    Button btnRestart;
 
     @FXML
-    private Label lblScore;
+    Label lblScore;
 
-    private List<Button> sequence = new ArrayList<>();
+    List<Button> sequence = new ArrayList<>();
     private List<Button> playerInput = new ArrayList<>();
     private Random random = new Random();
     private List<String> players = new ArrayList<>();
@@ -55,7 +55,7 @@ public class GameController {
         btnYellow.setOnAction(event -> handlePlayerInput(btnYellow));
     }
 
-    private void startGame() {
+    void startGame() {
         if (players.isEmpty()) {
             lblScore.setText("Aucun joueur enregistré !");
             return;
@@ -134,7 +134,7 @@ public class GameController {
         pause.play();
     }
 
-    private void handlePlayerInput(Button button) {
+    void handlePlayerInput(Button button) {
         if (button == sequence.get(playerInput.size())) {
             playerInput.add(button);
             if (playerInput.size() == sequence.size()) {
@@ -187,7 +187,7 @@ public class GameController {
         btnYellow.setDisable(true);
     }
 
-    private void resetAndRestartGame() {
+    void resetAndRestartGame() {
         System.out.println("Rejouer : Réinitialisation du jeu...");
         resetGame();
 

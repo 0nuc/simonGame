@@ -37,4 +37,13 @@ public class Jeu {
     public void setJoueurs(List<Joueur> joueurs) {
         this.joueurs = joueurs;
     }
+
+    // Méthodes manquantes ajoutées ici
+    public void setJeuService(JeuService jeuService) {
+        this.jeuService = jeuService;
+    }
+
+    public void setSonService(SonService sonService) {
+        this.sonService = sonService;
+    }
 }

@@ -14,13 +14,13 @@ import java.util.List;
 public class PlayerNameController {
 
     @FXML
-    private VBox playerNameFields; // VBox pour accueillir les champs de texte
+    VBox playerNameFields; // VBox pour accueillir les champs de texte
 
     @FXML
-    private Button btnRetour; // Bouton retour
+    Button btnRetour; // Bouton retour
 
     @FXML
-    private Button btnSuivant; // Bouton suivant
+    Button btnSuivant; // Bouton suivant
 
     private int numberOfPlayers = 2; // Par défaut, deux joueurs
 
@@ -68,7 +68,7 @@ public class PlayerNameController {
         });
     }
 
-    private void loadPlayerNameFields() {
+    void loadPlayerNameFields() {
         playerNameFields.getChildren().clear(); // Effacer les anciens champs
 
         // Définir les couleurs de bordure pour chaque joueur
@@ -90,7 +90,7 @@ public class PlayerNameController {
         }
     }
 
-    private List<String> getPlayerNames() {
+    List<String> getPlayerNames() {
         List<String> playerNames = new ArrayList<>();
         for (var child : playerNameFields.getChildren()) {
             if (child instanceof TextField) {
