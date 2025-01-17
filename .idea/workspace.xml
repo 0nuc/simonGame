@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="Modif test business 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/controller/PlayerNameControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/controller/PrimaryControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/utils/JavaFXThreadingRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PlayerNameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PlayerNameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/playerName.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/playerName.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PlayerNameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PlayerNameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/playerName.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/playerName.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,25 +34,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Auvinet27"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/0nuc/simonGame.git",
-    "accountId": "ad2159e2-1eca-48e2-aabe-6f24ae7a48ad"
-  }
-}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2nnBgzkK3jvgvwfpu15iydeQvwb" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,18 +45,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
-    "JUnit.fr.esgi in simon.executor": "Coverage",
+    "JUnit.fr.esgi in simon.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "matys",
+    "git-widget-placeholder": "Merging Nicolas",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/joris/IdeaProjects/simonGame/simon/src/main/resources/fr/esgi",
+    "last_opened_file_path": "C:/Users/joris/Documents/simonGame",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,7 +70,20 @@
       <recent name="C:\Users\joris\IdeaProjects\simonGame" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.fr.esgi in simon">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.esgi.App" />
+      <module name="simon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.esgi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JeuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simon" />
       <extension name="coverage">
@@ -134,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.fr.esgi in simon" />
         <item itemvalue="JUnit.fr.esgi.business in simon" />
         <item itemvalue="JUnit.JeuTest" />
@@ -144,8 +148,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -158,16 +162,12 @@
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
       <workItem from="1729599076035" duration="4062000" />
-      <workItem from="1733905025672" duration="783000" />
+      <workItem from="1735993771828" duration="3687000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modif test business 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modif test business 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -183,23 +183,15 @@
     <SUITE FILE_PATH="coverage/SimonProject$PlayerNameControllerTest.ic" NAME="PlayerNameControllerTest Coverage Results" MODIFIED="1733844685488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.esgi.controller.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/simonGame$JoueurTest_testerConstructeurEtGetters.ic" NAME="JoueurTest.testerConstructeurEtGetters Coverage Results" MODIFIED="1733844734340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/SimonProject$fr_esgi_business_in_simon.ic" NAME="fr.esgi.business in simon Coverage Results" MODIFIED="1733846374577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.esgi.business.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/simonGame$business_in_simon.ic" NAME="business in simon Coverage Results" MODIFIED="1733845687407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/simonGame$fr_esgi_in_simon.ic" NAME="fr.esgi in simon Coverage Results" MODIFIED="1733846590461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/SimonProject$fr_esgi_in_simon.ic" NAME="fr.esgi in simon Coverage Results" MODIFIED="1733846509261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.esgi.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/simonGame$JeuTest.ic" NAME="JeuTest Coverage Results" MODIFIED="1733843542878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>fr.esgi.business.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SimonProject$fr_esgi_in_simon.ic" NAME="fr.esgi in simon Coverage Results" MODIFIED="1733846278815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>fr.esgi.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SimonProject$esgi_in_simon.ic" NAME="esgi in simon Coverage Results" MODIFIED="1733846119952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/simonGame$esgi_in_simon.ic" NAME="esgi in simon Coverage Results" MODIFIED="1733846361669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/SimonProject$JeuServiceImplTest.ic" NAME="JeuServiceImplTest Coverage Results" MODIFIED="1733764314941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.esgi.service.impl.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/SimonProject$esgi_in_simon.ic" NAME="esgi in simon Coverage Results" MODIFIED="1733846119952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

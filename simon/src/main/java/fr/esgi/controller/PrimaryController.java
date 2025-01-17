@@ -11,6 +11,7 @@ public class PrimaryController {
     @FXML
     private Button multijoueurButton;  // Un bouton dans votre fichier FXML (par exemple un bouton "Multijoueur")
 
+
     @FXML
     private void handleMultijoueurClick() throws Exception {
         // Charger le fichier FXML pour l'écran secondaire

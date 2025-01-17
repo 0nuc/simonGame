@@ -1,11 +1,10 @@
 package fr.esgi.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.input.MouseEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import javafx.fxml.FXMLLoader;
 
 public class SecondaryController {
 
@@ -31,7 +30,7 @@ public class SecondaryController {
             // Charger le fichier FXML pour playerName.fxml
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/playerName.fxml"));
 
-            // Obtenir l'élément de la scène actuelle pour récupérer le Stage
+            // Obtenir le stage actuel
             Stage stage = (Stage) circle2.getScene().getWindow();  // Récupérer la fenêtre actuelle à partir de circle2
             stage.setScene(new Scene(loader.load()));
 
