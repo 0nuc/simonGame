@@ -51,7 +51,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version>
                 <configuration>
-                    <argLine>--add-modules javafx.controls,javafx.fxml,javafx.media</argLine>
+                    <argLine>--add-modules javafx.controls,javafx.fxml</argLine>
                 </configuration>
             </plugin>
 
