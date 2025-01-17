@@ -1,9 +1,12 @@
 package fr.esgi.controller;
 
-import javafx.application.Platform;
+import fr.esgi.util.JavaFXInitializer;
 import javafx.scene.control.Button;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockitoAnnotations;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,10 +15,14 @@ class GameControllerTest {
     private GameController controller;
 
     @BeforeAll
-    public static void initToolkit() {
-        if (!Platform.isFxApplicationThread()) {
-            Platform.startup(() -> {});
-        }
+    static void initJavaFX() {
+        JavaFXInitializer.initToolkit(); // Initialiser JavaFX avant tous les tests
+    }
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        controller = new GameController();
     }
 
     @Test

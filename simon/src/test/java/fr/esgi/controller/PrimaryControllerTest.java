@@ -1,5 +1,6 @@
 package fr.esgi.controller;
 
+import fr.esgi.util.JavaFXInitializer;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,15 +19,8 @@ class PrimaryControllerTest {
     private Button multijoueurButton;
 
     @BeforeAll
-    public static void initToolkit() {
-        try {
-            Platform.startup(() -> {
-                // JavaFX Toolkit initialisé
-            });
-        } catch (IllegalStateException e) {
-            // Toolkit déjà initialisé
-            System.out.println("JavaFX Toolkit already initialized.");
-        }
+    static void initJavaFX() {
+        JavaFXInitializer.initToolkit(); // Initialiser JavaFX avant tous les tests
     }
 
     @Test

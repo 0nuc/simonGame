@@ -1,5 +1,6 @@
 package fr.esgi.controller;
 
+import fr.esgi.util.JavaFXInitializer;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.VBox;
@@ -14,15 +15,8 @@ class SecondaryControllerTest {
     private SecondaryController controller;
 
     @BeforeAll
-    public static void initToolkit() {
-        try {
-            Platform.startup(() -> {
-                // JavaFX Toolkit initialisé
-            });
-        } catch (IllegalStateException e) {
-            // Toolkit déjà initialisé
-            System.out.println("JavaFX Toolkit already initialized.");
-        }
+    static void initJavaFX() {
+        JavaFXInitializer.initToolkit(); // Initialiser JavaFX avant tous les tests
     }
 
     @Test

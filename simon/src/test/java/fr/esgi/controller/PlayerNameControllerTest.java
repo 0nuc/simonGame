@@ -1,5 +1,6 @@
 package fr.esgi.controller;
 
+import fr.esgi.util.JavaFXInitializer;
 import javafx.application.Platform;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
@@ -13,15 +14,8 @@ class PlayerNameControllerTest {
     private PlayerNameController controller;
 
     @BeforeAll
-    public static void initToolkit() {
-        try {
-            Platform.startup(() -> {
-                // JavaFX Toolkit initialisé
-            });
-        } catch (IllegalStateException e) {
-            // Toolkit déjà initialisé
-            System.out.println("JavaFX Toolkit already initialized.");
-        }
+    static void initJavaFX() {
+        JavaFXInitializer.initToolkit(); // Initialiser JavaFX avant tous les tests
     }
 
     @Test
