@@ -9,10 +9,17 @@ import javafx.stage.Stage;
 public class PrimaryController {
 
     @FXML
-    private Button multijoueurButton;  // Un bouton dans votre fichier FXML (par exemple un bouton "Multijoueur")
+    Button multijoueurButton;
 
     @FXML
-    private void handleMultijoueurClick() throws Exception {
+    Button btnSolo;  // Un bouton dans votre fichier FXML (par exemple un bouton "Multijoueur")
+
+    @FXML
+    Button btnCredits;
+
+
+    @FXML
+    void handleMultijoueurClick() throws Exception {
         // Charger le fichier FXML pour l'écran secondaire
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/secondary.fxml"));
 
@@ -23,4 +30,37 @@ public class PrimaryController {
         stage.setScene(new Scene(loader.load()));
         stage.show();
     }
+
+    @FXML
+    void handleSoloClick() {
+        try {
+            // Charger le fichier FXML pour la page playerName
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/playerName.fxml"));
+            Stage stage = (Stage) btnSolo.getScene().getWindow();
+            Scene scene = new Scene(loader.load());
+
+            // Récupérer le contrôleur de PlayerName
+            PlayerNameController playerNameController = loader.getController();
+            playerNameController.setNumberOfPlayers(1);  // Passer 1 joueur
+
+            // Afficher la nouvelle scène
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void handleCreditsClick() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/credits.fxml"));
+            Stage stage = (Stage) btnCredits.getScene().getWindow();
+            stage.setScene(new Scene(loader.load()));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }

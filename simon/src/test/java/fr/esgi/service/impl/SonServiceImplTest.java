@@ -1,25 +1,28 @@
 package fr.esgi.service.impl;
 
-import fr.esgi.service.SonService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 class SonServiceImplTest {
 
-    private SonService sonService;
+    private SonServiceImpl sonService;
 
     @BeforeEach
     void setUp() {
-        sonService = (SonService) new SonServiceImpl();
+        sonService = new SonServiceImpl();
     }
 
     @Test
     void testPlaySound() {
-        sonService.playSound("testSound");
+        // Vérifie que playSound ne lève pas d'exception
+        assertDoesNotThrow(() -> sonService.playSound("testSound"));
     }
 
     @Test
     void testStopSound() {
-        sonService.stopSound();
+        // Vérifie que stopSound ne lève pas d'exception
+        assertDoesNotThrow(() -> sonService.stopSound());
     }
 }

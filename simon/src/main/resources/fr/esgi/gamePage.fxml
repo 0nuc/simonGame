@@ -1,120 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="1085.0" prefWidth="1500.0" spacing="20.0" style="-fx-background-color: #463F3F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.esgi.business.Jeu">
-    <children>
+<VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+   alignment="CENTER" spacing="20" prefWidth="1500.0" prefHeight="1085.0"
+   style="-fx-background-color: #463F3F;" fx:controller="fr.esgi.controller.GameController">
+
+   <children>
       <AnchorPane prefHeight="1084.0" prefWidth="1460.0">
          <children>
-            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="18.0" layoutY="5.0" text="A VOUS DE JOUER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="96.0" />
-               </font>
-            </Label>
-            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="23.0" layoutY="116.0" text="AMUSEZ VOUS BIEN !!" textFill="WHITE">
-               <font>
-                  <Font size="29.0" />
-               </font>
-            </Label>
-            <AnchorPane layoutX="21.0" layoutY="200.0" prefHeight="769.0" prefWidth="374.0" style="-fx-background-color: #2D2828; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 30; -fx-background-radius: 30;">
+            <!-- Titre -->
+            <Label alignment="TOP_LEFT" layoutX="18.0" layoutY="5.0"
+               text="A VOUS DE JOUER" textFill="WHITE"
+               style="-fx-font-size: 96px;" />
+
+            <!-- Sous-titre -->
+            <Label alignment="TOP_LEFT" layoutX="23.0" layoutY="116.0"
+               text="AMUSEZ VOUS BIEN !!" textFill="WHITE"
+               style="-fx-font-size: 29px;" />
+
+            <!-- Onglet de configuration -->
+            <AnchorPane layoutX="50" layoutY="150" prefHeight="250" prefWidth="400"
+               style="-fx-background-color: #2D2828; -fx-border-color: white; -fx-border-width: 2;">
+
                <children>
-                  <Label layoutX="27.0" layoutY="22.0" text="OPTION:" textFill="WHITE">
-                     <font>
-                        <Font name="System Italic" size="32.0" />
-                     </font>
-                  </Label>
-                  <AnchorPane layoutX="26.0" layoutY="112.0" prefHeight="51.0" prefWidth="82.0" style="-fx-border-color: white; -fx-border-width: 3;">
-                     <children>
-                        <Label layoutX="16.0" layoutY="9.0" text="SON" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="23.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </AnchorPane>
-                  <Label layoutX="119.0" layoutY="121.0" text=":" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="23.0" />
-                     </font>
-                  </Label>
-                  <RadioButton layoutX="136.0" layoutY="125.0" mnemonicParsing="false" text="ACTIVER" textFill="WHITE">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton layoutX="246.0" layoutY="125.0" mnemonicParsing="false" text="DESACTIVER " textFill="WHITE">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </RadioButton>
-                  <AnchorPane layoutX="37.0" layoutY="203.0" opacity="0.22" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: black;" />
-                  <Button layoutX="32.0" layoutY="202.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" style="-fx-background-color: #463F3F; -fx-background-radius: 0;" text="Guitare" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Button>
-                  <AnchorPane layoutX="174.0" layoutY="204.0" opacity="0.22" prefHeight="51.0" prefWidth="110.0" style="-fx-background-color: black;" />
-                  <Button layoutX="169.0" layoutY="203.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="108.0" style="-fx-background-color: #463F3F; -fx-background-radius: 0;" text="Piano" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Button>
-                  <AnchorPane layoutX="42.0" layoutY="266.0" opacity="0.22" prefHeight="51.0" prefWidth="142.0" style="-fx-background-color: black;" />
-                  <Button layoutX="35.0" layoutY="265.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #463F3F; -fx-background-radius: 0;" text="Xylophone" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Button>
-                  <AnchorPane layoutX="42.0" layoutY="329.0" opacity="0.22" prefHeight="51.0" prefWidth="123.0" style="-fx-background-color: black;" />
-                  <Button layoutX="35.0" layoutY="328.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="123.0" style="-fx-background-color: #463F3F; -fx-background-radius: 0;" text="Batterie" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Button>
-                  <AnchorPane layoutX="181.0" layoutY="330.0" opacity="0.22" prefHeight="51.0" prefWidth="142.0" style="-fx-background-color: black;" />
-                  <Button layoutX="174.0" layoutY="329.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #463F3F; -fx-background-radius: 0;" text="Clarinette" textFill="WHITE">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="33.0" layoutY="695.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="317.0" style="-fx-background-color: #463F3F; -fx-background-radius: 30;" text="START" textFill="WHITE">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Button>
+                  <Label layoutX="20" layoutY="10" text="Configuration du jeu" textFill="WHITE"
+                     style="-fx-font-size: 18px;" />
+
+                  <Label layoutX="20" layoutY="50" text="Couleur Rouge :" textFill="WHITE" />
+                  <ComboBox fx:id="colorRed" layoutX="150" layoutY="45" prefWidth="100" />
+
+                  <Label layoutX="20" layoutY="90" text="Couleur Bleue :" textFill="WHITE" />
+                  <ComboBox fx:id="colorBlue" layoutX="150" layoutY="85" prefWidth="100" />
+
+                  <Label layoutX="20" layoutY="130" text="Couleur Verte :" textFill="WHITE" />
+                  <ComboBox fx:id="colorGreen" layoutX="150" layoutY="125" prefWidth="100" />
+
+                  <Label layoutX="20" layoutY="170" text="Couleur Jaune :" textFill="WHITE" />
+                  <ComboBox fx:id="colorYellow" layoutX="150" layoutY="165" prefWidth="100" />
+
+                  <Label layoutX="20" layoutY="210" text="Son des touches :" textFill="WHITE" />
+                  <ComboBox fx:id="soundChoice" layoutX="150" layoutY="205" prefWidth="150" />
+
+                  <Button fx:id="btnApplyConfig" layoutX="100" layoutY="250"
+                     text="Appliquer" textFill="WHITE"
+                     style="-fx-background-color: #555555; -fx-border-radius: 5;" />
                </children>
             </AnchorPane>
-            <Button layoutX="602.0" layoutY="214.0" mnemonicParsing="false" prefHeight="439.0" prefWidth="478.0" style="-fx-max-width: 350; -fx-max-height: 350; -fx-background-radius: 0; -fx-background-color: #480E0E;">
-               <cursor>
-                  <Cursor fx:constant="NONE" />
-               </cursor>
-            </Button>
-            <Button layoutX="1002.0" layoutY="213.0" mnemonicParsing="false" prefHeight="439.0" prefWidth="478.0" style="-fx-max-width: 350; -fx-max-height: 350; -fx-background-radius: 0; -fx-background-color: #11164F;">
-               <cursor>
-                  <Cursor fx:constant="NONE" />
-               </cursor>
-            </Button>
-            <Button layoutX="604.0" layoutY="612.0" mnemonicParsing="false" prefHeight="439.0" prefWidth="478.0" style="-fx-max-width: 350; -fx-max-height: 350; -fx-background-radius: 0; -fx-background-color: #0C5C15;">
-               <cursor>
-                  <Cursor fx:constant="NONE" />
-               </cursor>
-            </Button>
-            <Button layoutX="1003.0" layoutY="611.0" mnemonicParsing="false" prefHeight="439.0" prefWidth="478.0" style="-fx-max-width: 350; -fx-max-height: 350; -fx-background-radius: 0; -fx-background-color: #88840A;">
-               <cursor>
-                  <Cursor fx:constant="NONE" />
-               </cursor>
-            </Button>
+
+            <!-- Boutons de couleurs -->
+            <Button fx:id="btnRed" layoutX="602.0" layoutY="214.0"
+               mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" />
+
+            <Button fx:id="btnBlue" layoutX="1002.0" layoutY="214.0"
+               mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" />
+
+            <Button fx:id="btnGreen" layoutX="602.0" layoutY="612.0"
+               mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" />
+
+            <Button fx:id="btnYellow" layoutX="1002.0" layoutY="612.0"
+               mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" />
+
+            <!-- Bouton "START" -->
+            <Button fx:id="btnStart" layoutX="33.0" layoutY="695.0"
+               mnemonicParsing="false" prefHeight="51.0" prefWidth="317.0"
+               style="-fx-background-color: #463F3F; -fx-border-radius: 30; -fx-font-size: 24px;"
+               text="START" textFill="WHITE" />
+
+            <!-- Bouton "Rejouer" -->
+            <Button fx:id="btnRestart" layoutX="33.0" layoutY="760.0"
+               mnemonicParsing="false" prefHeight="51.0" prefWidth="317.0"
+               style="-fx-background-color: #555555; -fx-border-radius: 30; -fx-font-size: 24px;"
+               text="REJOUER" textFill="WHITE" visible="false" />
+
+            <!-- Affichage du score -->
+            <Label fx:id="lblScore" layoutX="50.0" layoutY="300.0"
+               text="Score: 0" textFill="WHITE"
+               style="-fx-font-size: 24px;" />
+            <Button fx:id="btnReplayBest" layoutX="33.0" layoutY="820.0"
+               mnemonicParsing="false" prefHeight="51.0" prefWidth="317.0"
+               style="-fx-background-color: #555555; -fx-border-radius: 30; -fx-font-size: 24px;"
+               text="Rejouer Meilleur" textFill="WHITE" visible="false" />
+
          </children>
       </AnchorPane>
-    </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
 </VBox>

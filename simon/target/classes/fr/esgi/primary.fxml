@@ -9,37 +9,38 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" minHeight="1085.0" minWidth="1500.0" spacing="20.0"
-      style="-fx-background-color: #463F3F;" xmlns="http://javafx.com/javafx/23.0.1"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.esgi.controller.PrimaryController">
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #463F3F;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.esgi.controller.PrimaryController">
    <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
    <AnchorPane prefHeight="1091.0" prefWidth="1460.0">
-      <Label layoutX="378.0" layoutY="78.0" text="SIMON GAME" textFill="WHITE">
+      <Button fx:id="btnSolo" layoutX="89.0" layoutY="396.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" onAction="#handleSoloClick" text="SOLO" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="96.0"/>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button fx:id="multijoueurButton" layoutX="81.0" layoutY="630.0" mnemonicParsing="false" onAction="#handleMultijoueurClick" prefHeight="121.0" prefWidth="582.0" style="-fx-background-color: none; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 5;" text="MULTIJOUEUR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCredits" layoutX="89.0" layoutY="513.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0"  onAction="#handleCreditsClick"  style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="CRÉDIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="603.0" fitWidth="640.0" layoutX="811.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@logo.png" />
+      </ImageView>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="60.0" layoutY="24.0" text="SIMON GAME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="96.0" />
          </font>
       </Label>
-      <Button layoutX="89.0" layoutY="396.0" mnemonicParsing="false" prefHeight="121.0"
-              prefWidth="570.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 50;"
-              text="Jouer en mode Solo" textFill="#1a1a1a">
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="67.0" layoutY="177.0" text="AMUSEZ VOUS BIEN !!" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="38.0"/>
+            <Font size="29.0" />
          </font>
-      </Button>
-      <Button layoutX="81.0" layoutY="729.0" mnemonicParsing="false" prefHeight="121.0"
-              prefWidth="582.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 50;"
-              text="Jouer en mode multi-joueurs" textFill="#1a1a1a" fx:id="multijoueurButton"
-              onAction="#handleMultijoueurClick">
-         <font>
-            <Font name="System Bold" size="38.0"/>
-         </font>
-      </Button>
-      <ImageView fitHeight="603.0" fitWidth="640.0" layoutX="811.0" layoutY="325.0"
-                 pickOnBounds="true" preserveRatio="true">
-         <Image
-                 url="@logo.png"/>
-      </ImageView>
+      </Label>
    </AnchorPane>
 </VBox>

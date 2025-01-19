@@ -1,22 +1,25 @@
 package fr.esgi.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.input.MouseEvent;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 
 public class SecondaryController {
 
     @FXML
-    private Circle circle2;  // Lié à circle2 dans le FXML
+    Circle circle2;  // Lié à circle2 dans le FXML
 
     @FXML
-    private Circle circle3;  // Lié à circle3 dans le FXML
+    Circle circle3;  // Lié à circle3 dans le FXML
 
     @FXML
-    private Circle circle4;  // Lié à circle4 dans le FXML
+    Circle circle4;  // Lié à circle4 dans le FXML
+
+    @FXML
+    Button btnRetour;  // Bouton retour
 
     @FXML
     public void initialize() {
@@ -24,14 +27,27 @@ public class SecondaryController {
         circle2.setOnMouseClicked(event -> openPlayerNameScreen(2));
         circle3.setOnMouseClicked(event -> openPlayerNameScreen(3));
         circle4.setOnMouseClicked(event -> openPlayerNameScreen(4));
+
+        // Action pour le bouton retour
+        btnRetour.setOnAction(event -> {
+            try {
+                // Charger la page principale
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/primary.fxml"));
+                Stage stage = (Stage) btnRetour.getScene().getWindow();
+                stage.setScene(new Scene(loader.load()));
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
 
-    private void openPlayerNameScreen(int numberOfPlayers) {
+    void openPlayerNameScreen(int numberOfPlayers) {
         try {
             // Charger le fichier FXML pour playerName.fxml
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/playerName.fxml"));
 
-            // Obtenir l'élément de la scène actuelle pour récupérer le Stage
+            // Obtenir le stage actuel
             Stage stage = (Stage) circle2.getScene().getWindow();  // Récupérer la fenêtre actuelle à partir de circle2
             stage.setScene(new Scene(loader.load()));
 
