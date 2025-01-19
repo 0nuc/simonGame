@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="Push Class Java Initializer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/gamePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/gamePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/test-classes/fr/esgi/service/impl/JeuServiceImplTest.class" beforeDir="false" />
-    </list>
+    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="Modif GameController, pom" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +49,7 @@
     "Maven.simon [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging matys",
+    "git-widget-placeholder": "matys",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/joris/Documents/simonGame",
     "node.js.detected.package.eslint": "true",
@@ -175,6 +167,15 @@
       <workItem from="1735993771828" duration="3687000" />
       <workItem from="1737026984036" duration="9777000" />
     </task>
+    <task id="LOCAL-00001" summary="Modif GameController, pom">
+      <option name="closed" value="true" />
+      <created>1737262008598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737262008598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +183,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Push Class Java Initializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push Class Java Initializer" />
+    <MESSAGE value="Modif GameController, pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modif GameController, pom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
