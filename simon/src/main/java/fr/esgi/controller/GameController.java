@@ -3,46 +3,87 @@ package fr.esgi.controller;
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
+import javax.sound.sampled.*;
+import java.io.File;
+import java.io.IOException;
 
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class GameController {
-
     @FXML
-    Button btnRed;
-
+    private Button btnRed;
     @FXML
-    Button btnBlue;
-
+    private Button btnBlue;
     @FXML
-    Button btnGreen;
-
+    private Button btnGreen;
     @FXML
-    Button btnYellow;
-
+    private Button btnYellow;
     @FXML
-    Button btnStart;
-
+    private Button btnStart;
     @FXML
     Button btnRestart;
-
     @FXML
-    Label lblScore;
+    private Label lblScore;
+    @FXML
+    private Button btnApplyConfig;
+    @FXML
+    private ComboBox<String> colorRed;
+    @FXML
+    private ComboBox<String> colorBlue;
+    @FXML
+    private ComboBox<String> colorGreen;
+    @FXML
+    private ComboBox<String> colorYellow;
+    @FXML
+    private ComboBox<String> soundChoice;
+    @FXML
+    private Button btnReplayBest;
 
-    List<Button> sequence = new ArrayList<>();
+    private List<Button> sequence = new ArrayList<>();
     private List<Button> playerInput = new ArrayList<>();
     private Random random = new Random();
     private List<String> players = new ArrayList<>();
     private final List<Integer> scores = new ArrayList<>();
+    private Map<Button, String> buttonColors = new HashMap<>();
+    private String selectedSound = "default.wav";
     private int currentPlayerIndex = 0;
     private int totalPlayers = 1;
     private int currentStep = 0;
+    private final Map<Button, String> buttonSounds = new HashMap<>();
+    private List<Button> bestPlayerSequence = new ArrayList<>();
+    private String bestPlayerName = "";
+    private final List<String> currentPlayerSounds = new ArrayList<>();
+    private List<String> bestPlayerSounds = new ArrayList<>();
 
     public void initialize() {
+        btnReplayBest.setOnAction(event -> replayBestPlayer());
+        btnReplayBest.setDisable(true);
+        btnReplayBest.setVisible(false);
+        List<String> colors = Arrays.asList("#FF0000", "#0000FF", "#008000", "#FFFF00", "#FFFFFF", "#000000");
+        colorRed.getItems().addAll(colors);
+        colorBlue.getItems().addAll(colors);
+        colorGreen.getItems().addAll(colors);
+        colorYellow.getItems().addAll(colors);
+
+        buttonSounds.put(btnRed, "/sounds/guitar.wav");
+        buttonSounds.put(btnBlue, "/sounds/piano.wav");
+        buttonSounds.put(btnGreen, "/sounds/guitar.wav");
+        buttonSounds.put(btnYellow, "/sounds/piano.wav");
+
+        List<String> sounds = Arrays.asList("guitar.wav", "piano.wav");
+        soundChoice.getItems().addAll(sounds);
+
+        btnApplyConfig.setOnAction(event -> applyConfigurations());
+
         btnStart.setOnAction(event -> startGame());
         btnRestart.setOnAction(event -> resetAndRestartGame());
 
@@ -55,7 +96,7 @@ public class GameController {
         btnYellow.setOnAction(event -> handlePlayerInput(btnYellow));
     }
 
-    void startGame() {
+    private void startGame() {
         if (players.isEmpty()) {
             lblScore.setText("Aucun joueur enregistré !");
             return;
@@ -73,6 +114,22 @@ public class GameController {
         lblScore.setText("Joueur: " + players.get(currentPlayerIndex) + " - Score: 0");
         addNextStep();
         playSequence();
+    }
+
+    private void applyConfigurations() {
+        // Appliquer les couleurs choisies
+        buttonColors.put(btnRed, colorRed.getValue() != null ? colorRed.getValue() : "#480E0E");
+        buttonColors.put(btnBlue, colorBlue.getValue() != null ? colorBlue.getValue() : "#11164F");
+        buttonColors.put(btnGreen, colorGreen.getValue() != null ? colorGreen.getValue() : "#0C5C15");
+        buttonColors.put(btnYellow, colorYellow.getValue() != null ? colorYellow.getValue() : "#88840A");
+
+        btnRed.setStyle("-fx-background-color: " + buttonColors.get(btnRed) + ";");
+        btnBlue.setStyle("-fx-background-color: " + buttonColors.get(btnBlue) + ";");
+        btnGreen.setStyle("-fx-background-color: " + buttonColors.get(btnGreen) + ";");
+        btnYellow.setStyle("-fx-background-color: " + buttonColors.get(btnYellow) + ";");
+
+        // Appliquer le son choisi
+        selectedSound = soundChoice.getValue() != null ? soundChoice.getValue() : "default.wav";
     }
 
     public void setPlayers(List<String> playerNames) {
@@ -134,9 +191,13 @@ public class GameController {
         pause.play();
     }
 
-    void handlePlayerInput(Button button) {
+    private void handlePlayerInput(Button button) {
         if (button == sequence.get(playerInput.size())) {
             playerInput.add(button);
+            String soundPath = buttonSounds.get(button);
+            currentPlayerSounds.add(soundPath);
+            playSound(soundPath);
+
             if (playerInput.size() == sequence.size()) {
                 playerInput.clear();
                 currentStep++;
@@ -149,11 +210,43 @@ public class GameController {
             lblScore.setText(
                     "Joueur " + players.get(currentPlayerIndex) + " a perdu avec un score de " + currentStep + " !");
             scores.set(currentPlayerIndex, currentStep);
+
+            saveBestPlayerIfNeeded();
             nextPlayer();
         }
     }
 
+    private void saveBestPlayerIfNeeded() {
+        int highestScore = scores.stream().max(Integer::compareTo).orElse(0);
+
+        if (scores.get(currentPlayerIndex) >= highestScore) {
+            bestPlayerName = players.get(currentPlayerIndex);
+            bestPlayerSounds = new ArrayList<>(currentPlayerSounds);
+        }
+
+        currentPlayerSounds.clear();
+    }
+
+    private void playSound(String soundFile) {
+        try {
+            URL soundUrl = getClass().getResource(soundFile);
+            if (soundUrl == null) {
+                System.err.println("❌ Erreur: Fichier son introuvable -> " + soundFile);
+                return;
+            }
+
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(new File(soundUrl.toURI()));
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioStream);
+            clip.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     private void nextPlayer() {
+        btnReplayBest.setDisable(false);
+        btnReplayBest.setVisible(true);
         currentPlayerIndex++;
         if (currentPlayerIndex >= totalPlayers) {
             showRanking();
@@ -170,6 +263,11 @@ public class GameController {
 
         ranking.sort((p1, p2) -> Integer.compare(p2.getScore(), p1.getScore()));
 
+        if (!ranking.isEmpty()) {
+            bestPlayerName = ranking.get(0).getName();
+            bestPlayerSequence = new ArrayList<>(sequence);
+        }
+
         StringBuilder rankingMessage = new StringBuilder("Classement Final :\n");
         for (int i = 0; i < ranking.size(); i++) {
             rankingMessage.append((i + 1)).append(". ").append(ranking.get(i).getName())
@@ -185,9 +283,11 @@ public class GameController {
         btnBlue.setDisable(true);
         btnGreen.setDisable(true);
         btnYellow.setDisable(true);
+        btnReplayBest.setDisable(false);
+        btnReplayBest.setVisible(true);
     }
 
-    void resetAndRestartGame() {
+    private void resetAndRestartGame() {
         System.out.println("Rejouer : Réinitialisation du jeu...");
         resetGame();
 
@@ -207,6 +307,25 @@ public class GameController {
         btnYellow.setDisable(false);
 
         startGame();
+    }
+
+    private void replayBestPlayer() {
+        if (bestPlayerSounds.isEmpty()) {
+            lblScore.setText("Aucune partie à rejouer !");
+            return;
+        }
+        lblScore.setText("Rejoue la partie du meilleur joueur : " + bestPlayerName);
+        replayStep(0);
+    }
+
+    private void replayStep(int index) {
+        if (index < bestPlayerSounds.size()) {
+            playSound(bestPlayerSounds.get(index));
+
+            PauseTransition pause = new PauseTransition(Duration.seconds(1));
+            pause.setOnFinished(event -> replayStep(index + 1));
+            pause.play();
+        }
     }
 
     private void resetGame() {
