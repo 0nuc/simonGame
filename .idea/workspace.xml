@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/CreditsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/CreditsController.java" afterDir="false" />
-    </list>
+    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +155,7 @@
       <updated>1729599074925</updated>
       <workItem from="1729599076035" duration="4062000" />
       <workItem from="1735993771828" duration="3920000" />
-      <workItem from="1736967638865" duration="2217000" />
+      <workItem from="1736967638865" duration="2300000" />
     </task>
     <servers />
   </component>
