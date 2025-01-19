@@ -4,16 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="Modif GameController, pom" />
+    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="Modif workspace.xml">
+      <change afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/CreditsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/controller/CreditsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/controller/GameControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/controller/GameControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/primary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 &amp; Mockito" />
       </list>
     </option>
   </component>
@@ -24,9 +45,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -42,14 +60,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.GameControllerTest.executor": "Run",
+    "JUnit.GameControllerTest.testHandlePlayerInput_CorrectInput.executor": "Run",
+    "JUnit.GameControllerTest.testHandlePlayerInput_WrongInput.executor": "Run",
+    "JUnit.SecondaryControllerTest.executor": "Run",
+    "JUnit.SecondaryControllerTest.testOpenPlayerNameScreen.executor": "Run",
     "JUnit.fr.esgi in simon.executor": "Run",
     "JUnit.java in simon.executor": "Coverage",
-    "Maven.simon [clean].executor": "Run",
     "Maven.simon [install].executor": "Run",
-    "Maven.simon [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "matys",
+    "git-widget-placeholder": "Merging matys",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/joris/Documents/simonGame",
     "node.js.detected.package.eslint": "true",
@@ -72,59 +92,65 @@
       <recent name="C:\Users\joris\IdeaProjects\simonGame" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.esgi.App" />
+  <component name="RunManager" selected="JUnit.java in simon">
+    <configuration name="GameControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.esgi.*" />
+          <option name="PATTERN" value="fr.esgi.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JeuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="simon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.esgi.business.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.esgi.business" />
-      <option name="MAIN_CLASS_NAME" value="fr.esgi.business.JeuTest" />
+      <option name="PACKAGE_NAME" value="fr.esgi.controller" />
+      <option name="MAIN_CLASS_NAME" value="fr.esgi.controller.GameControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fr.esgi in simon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameControllerTest.testHandlePlayerInput_WrongInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.esgi.*" />
+          <option name="PATTERN" value="fr.esgi.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fr.esgi" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="fr.esgi.controller" />
+      <option name="MAIN_CLASS_NAME" value="fr.esgi.controller.GameControllerTest" />
+      <option name="METHOD_NAME" value="testHandlePlayerInput_WrongInput" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fr.esgi.business in simon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SecondaryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simon" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.esgi.business.*" />
+          <option name="PATTERN" value="fr.esgi.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fr.esgi.business" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="fr.esgi.controller" />
+      <option name="MAIN_CLASS_NAME" value="fr.esgi.controller.SecondaryControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondaryControllerTest.testOpenPlayerNameScreen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.esgi.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.esgi.controller" />
+      <option name="MAIN_CLASS_NAME" value="fr.esgi.controller.SecondaryControllerTest" />
+      <option name="METHOD_NAME" value="testOpenPlayerNameScreen" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.java in simon" />
-        <item itemvalue="JUnit.fr.esgi in simon" />
-        <item itemvalue="JUnit.fr.esgi.business in simon" />
-        <item itemvalue="JUnit.JeuTest" />
+        <item itemvalue="JUnit.SecondaryControllerTest" />
+        <item itemvalue="JUnit.SecondaryControllerTest.testOpenPlayerNameScreen" />
+        <item itemvalue="JUnit.GameControllerTest" />
+        <item itemvalue="JUnit.GameControllerTest.testHandlePlayerInput_WrongInput" />
       </list>
     </recent_temporary>
   </component>
@@ -164,27 +190,17 @@
       <option name="presentableId" value="Default" />
       <updated>1729599074925</updated>
       <workItem from="1729599076035" duration="4062000" />
-      <workItem from="1735993771828" duration="3687000" />
-      <workItem from="1737026984036" duration="9777000" />
+      <workItem from="1735993771828" duration="3920000" />
+      <workItem from="1736967638865" duration="2040000" />
     </task>
-    <task id="LOCAL-00001" summary="Modif GameController, pom">
-      <option name="closed" value="true" />
-      <created>1737262008598</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1737262008598</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Push Class Java Initializer" />
-    <MESSAGE value="Modif GameController, pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modif GameController, pom" />
+    <MESSAGE value="Modif workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modif workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -193,6 +209,10 @@
           <properties class="java.lang.ClassNotFoundException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -200,7 +220,7 @@
     <SUITE FILE_PATH="coverage/SimonProject$PlayerNameControllerTest.ic" NAME="PlayerNameControllerTest Coverage Results" MODIFIED="1733844685488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.esgi.controller.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/simonGame$java_in_simon.ic" NAME="java in simon Coverage Results" MODIFIED="1737106109497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/simonGame$java_in_simon.ic" NAME="java in simon Coverage Results" MODIFIED="1737269289728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/SimonProject$fr_esgi_in_simon.ic" NAME="fr.esgi in simon Coverage Results" MODIFIED="1733846509261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>fr.esgi.*</FILTER>
     </SUITE>

@@ -20,49 +20,49 @@ import java.util.Random;
 
 public class GameController {
     @FXML
-    private Button btnRed;
+    Button btnRed;
     @FXML
-    private Button btnBlue;
+    Button btnBlue;
     @FXML
-    private Button btnGreen;
+    Button btnGreen;
     @FXML
-    private Button btnYellow;
+    Button btnYellow;
     @FXML
-    private Button btnStart;
+    Button btnStart;
     @FXML
     Button btnRestart;
     @FXML
-    private Label lblScore;
+    Label lblScore;
     @FXML
-    private Button btnApplyConfig;
+    Button btnApplyConfig;
     @FXML
-    private ComboBox<String> colorRed;
+    ComboBox<String> colorRed;
     @FXML
-    private ComboBox<String> colorBlue;
+    ComboBox<String> colorBlue;
     @FXML
-    private ComboBox<String> colorGreen;
+    ComboBox<String> colorGreen;
     @FXML
-    private ComboBox<String> colorYellow;
+    ComboBox<String> colorYellow;
     @FXML
-    private ComboBox<String> soundChoice;
+    ComboBox<String> soundChoice;
     @FXML
-    private Button btnReplayBest;
+    Button btnReplayBest;
 
-    private List<Button> sequence = new ArrayList<>();
-    private List<Button> playerInput = new ArrayList<>();
+    List<Button> sequence = new ArrayList<>();
+    List<Button> playerInput = new ArrayList<>();
     private Random random = new Random();
-    private List<String> players = new ArrayList<>();
-    private final List<Integer> scores = new ArrayList<>();
-    private Map<Button, String> buttonColors = new HashMap<>();
-    private String selectedSound = "default.wav";
-    private int currentPlayerIndex = 0;
+    List<String> players = new ArrayList<>();
+    final List<Integer> scores = new ArrayList<>();
+    Map<Button, String> buttonColors = new HashMap<>();
+    String selectedSound = "default.wav";
+    int currentPlayerIndex = 0;
     private int totalPlayers = 1;
     private int currentStep = 0;
-    private final Map<Button, String> buttonSounds = new HashMap<>();
+    final Map<Button, String> buttonSounds = new HashMap<>();
     private List<Button> bestPlayerSequence = new ArrayList<>();
-    private String bestPlayerName = "";
-    private final List<String> currentPlayerSounds = new ArrayList<>();
-    private List<String> bestPlayerSounds = new ArrayList<>();
+    String bestPlayerName = "";
+    final List<String> currentPlayerSounds = new ArrayList<>();
+    List<String> bestPlayerSounds = new ArrayList<>();
 
     public void initialize() {
         btnReplayBest.setOnAction(event -> replayBestPlayer());
@@ -96,7 +96,7 @@ public class GameController {
         btnYellow.setOnAction(event -> handlePlayerInput(btnYellow));
     }
 
-    private void startGame() {
+    void startGame() {
         if (players.isEmpty()) {
             lblScore.setText("Aucun joueur enregistré !");
             return;
@@ -116,7 +116,7 @@ public class GameController {
         playSequence();
     }
 
-    private void applyConfigurations() {
+    void applyConfigurations() {
         // Appliquer les couleurs choisies
         buttonColors.put(btnRed, colorRed.getValue() != null ? colorRed.getValue() : "#480E0E");
         buttonColors.put(btnBlue, colorBlue.getValue() != null ? colorBlue.getValue() : "#11164F");
@@ -145,7 +145,7 @@ public class GameController {
         currentPlayerIndex = 0;
     }
 
-    private void addNextStep() {
+    void addNextStep() {
         int index = random.nextInt(4);
         Button nextButton = getNextButton(index);
         sequence.add(nextButton);
@@ -166,7 +166,7 @@ public class GameController {
         }
     }
 
-    private void playSequence() {
+    void playSequence() {
         PauseTransition pause = new PauseTransition(Duration.seconds(1));
         playStep(0, pause);
     }
@@ -191,22 +191,52 @@ public class GameController {
         pause.play();
     }
 
-    private void handlePlayerInput(Button button) {
+    void handlePlayerInput(Button button) {
+        // Vérifiez si la séquence est vide
+        if (sequence.isEmpty()) {
+            throw new IllegalStateException("La séquence est vide. Impossible de gérer l'entrée.");
+        }
+
+        // Vérifiez si l'index de playerInput est valide pour la séquence
+        if (playerInput.size() >= sequence.size()) {
+            throw new IndexOutOfBoundsException("Index invalide : " + playerInput.size() + ". Taille de la séquence : " + sequence.size());
+        }
+
+        // Vérifiez si le bouton correspond à l'étape actuelle de la séquence
         if (button == sequence.get(playerInput.size())) {
             playerInput.add(button);
+
+            // Vérifiez si le bouton a un son associé
             String soundPath = buttonSounds.get(button);
+            if (soundPath == null) {
+                throw new IllegalStateException("Aucun son associé au bouton.");
+            }
+
             currentPlayerSounds.add(soundPath);
             playSound(soundPath);
 
+            // Si le joueur termine la séquence actuelle
             if (playerInput.size() == sequence.size()) {
                 playerInput.clear();
                 currentStep++;
                 scores.set(currentPlayerIndex, currentStep);
+
+                // Vérifiez si le joueur existe avant de mettre à jour le score
+                if (currentPlayerIndex >= players.size()) {
+                    throw new IllegalStateException("Index du joueur invalide : " + currentPlayerIndex);
+                }
                 lblScore.setText("Joueur: " + players.get(currentPlayerIndex) + " - Score: " + currentStep);
+
+                // Ajoutez une nouvelle étape et rejouez la séquence
                 addNextStep();
                 playSequence();
             }
         } else {
+            // Le joueur a fait une erreur
+            if (currentPlayerIndex >= players.size()) {
+                throw new IllegalStateException("Index du joueur invalide : " + currentPlayerIndex);
+            }
+
             lblScore.setText(
                     "Joueur " + players.get(currentPlayerIndex) + " a perdu avec un score de " + currentStep + " !");
             scores.set(currentPlayerIndex, currentStep);
@@ -287,7 +317,7 @@ public class GameController {
         btnReplayBest.setVisible(true);
     }
 
-    private void resetAndRestartGame() {
+    void resetAndRestartGame() {
         System.out.println("Rejouer : Réinitialisation du jeu...");
         resetGame();
 
@@ -309,7 +339,7 @@ public class GameController {
         startGame();
     }
 
-    private void replayBestPlayer() {
+    void replayBestPlayer() {
         if (bestPlayerSounds.isEmpty()) {
             lblScore.setText("Aucune partie à rejouer !");
             return;
