@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/business/JeuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/test/java/fr/esgi/business/JeuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Couleur.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Couleur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Jeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Jeu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Joueur.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Joueur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PlayerNameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PlayerNameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/JeuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/JeuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/SonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/SonServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/ConfigUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/ConfigUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/TimerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/TimerUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simon/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/module-info.class" afterDir="false" />
-    </list>
+    <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +159,7 @@
       <workItem from="1729599076035" duration="4062000" />
       <workItem from="1735993771828" duration="3687000" />
       <workItem from="1737026984036" duration="9777000" />
-      <workItem from="1737106022739" duration="1210000" />
+      <workItem from="1737106022739" duration="2495000" />
     </task>
     <servers />
   </component>
