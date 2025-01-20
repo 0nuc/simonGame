@@ -20,7 +20,7 @@
             <Label alignment="TOP_LEFT" layoutX="23.0" layoutY="116.0" style="-fx-font-size: 29px;" text="AMUSEZ VOUS BIEN !!" textFill="WHITE" />
 
             <!-- Onglet de configuration -->
-            <AnchorPane layoutX="35.0" layoutY="169.0" prefHeight="788.0" prefWidth="400" style="-fx-background-color: #2D2828; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 30; -fx-background-radius: 30;">
+            <AnchorPane layoutX="35.0" layoutY="169.0" prefHeight="658.0" prefWidth="400" style="-fx-background-color: #2D2828; -fx-border-color: white; -fx-border-width: 3; -fx-border-radius: 30; -fx-background-radius: 30;">
 
                <children>
                   <Label layoutX="20" layoutY="10" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="OPTION :" textFill="WHITE">
@@ -58,26 +58,26 @@
                      </font></Label>
                   <ComboBox fx:id="soundChoice" layoutX="150.0" layoutY="290.0" prefWidth="150" />
 
-                  <Button fx:id="btnApplyConfig" layoutX="56.0" layoutY="443.0" prefHeight="27.0" prefWidth="288.0" style="-fx-background-color: none; -fx-border-color: #fff; -fx-border-radius: 5;" text="Appliquer" textFill="WHITE">
+                  <Button fx:id="btnApplyConfig" layoutX="56.0" layoutY="348.0" prefHeight="27.0" prefWidth="288.0" style="-fx-background-color: none; -fx-border-color: #fff; -fx-border-radius: 5;" text="Appliquer" textFill="WHITE">
                      <font>
                         <Font size="23.0" />
                      </font></Button>
       
                   <!-- Bouton "START" -->
-                  <Button fx:id="btnStart" layoutX="57.0" layoutY="530.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="288.0" style="-fx-background-color: #463F3F; -fx-border-radius: 50; -fx-font-size: 24px; -fx-font-weight: bold;" text="START" textFill="WHITE">
+                  <Button fx:id="btnStart" layoutX="56.0" layoutY="408.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="288.0" style="-fx-background-color: #463F3F; -fx-border-radius: 50; -fx-font-size: 24px; -fx-font-weight: bold;" text="START" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="32.0" />
                      </font>
                   </Button>
       
                   <!-- Affichage du score -->
-                  <Label fx:id="lblScore" layoutX="52.0" layoutY="611.0" prefHeight="35.0" prefWidth="288.0" style="-fx-font-size: 24px; -fx-background-color: #463F3F;" text="Score: 0" textFill="WHITE" />
+                  <Label fx:id="lblScore" layoutX="56.0" layoutY="481.0" prefHeight="35.0" prefWidth="288.0" style="-fx-font-size: 24px; -fx-background-color: #463F3F;" text="Score: 0" textFill="WHITE" />
                </children>
             </AnchorPane>
 
-            <!-- Bouton "Rejouer" -->
-            <Button fx:id="btnRestart" layoutX="76.0" layoutY="831.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="317.0" style="-fx-background-color: #463F3F; -fx-border-radius: 30; -fx-font-size: 24px;" text="REJOUER" textFill="WHITE" visible="false" />
-            <Button fx:id="btnReplayBest" layoutX="76.0" layoutY="891.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="317.0" style="-fx-background-color: #463F3F; -fx-border-radius: 30; -fx-font-size: 24px;" text="Rejouer Meilleur" textFill="WHITE" visible="false" />
+                        <!-- Bouton "Rejouer" -->
+            <Button fx:id="btnRestart" layoutX="76.0" layoutY="696.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="317.0" style="-fx-background-color: #463F3F; -fx-border-radius: 30; -fx-font-size: 24px;" text="REJOUER" textFill="WHITE" visible="false" />
+            <Button fx:id="btnReplayBest" layoutX="76.0" layoutY="756.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="317.0" style="-fx-background-color: #463F3F; -fx-border-radius: 30; -fx-font-size: 24px;" text="Rejouer Meilleur" textFill="WHITE" visible="false" />
 
             <!-- Boutons de couleurs -->
             <Button fx:id="btnRed" layoutX="602.0" layoutY="214.0" mnemonicParsing="false" prefHeight="256.0" prefWidth="256.0" />
