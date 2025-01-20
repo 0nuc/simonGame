@@ -27,12 +27,12 @@
                 <VBox fx:id="playerNameFields" layoutX="38.0" layoutY="291.0" spacing="10.0">
                     <!-- Les champs de texte seront ajoutés ici dynamiquement -->
                 </VBox>
-              <Button fx:id="btnRetour" layoutX="1040.0" layoutY="944.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="RETOUR" textFill="WHITE">
+              <Button fx:id="btnRetour" layoutX="599.0" layoutY="824.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="RETOUR" textFill="WHITE">
                   <font>
                       <Font name="System Bold" size="26.0" />
                   </font>
               </Button>
-              <Button fx:id="btnSuivant" layoutX="1223.0" layoutY="944.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="SUIVANT" textFill="WHITE">
+              <Button fx:id="btnSuivant" layoutX="782.0" layoutY="824.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="160.0" style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 10;" text="SUIVANT" textFill="WHITE">
                   <font>
                       <Font name="System Bold" size="26.0" />
                   </font>

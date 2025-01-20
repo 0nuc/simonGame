@@ -7,6 +7,23 @@
     <list default="true" id="b9d66140-5c40-4429-84f8-78511e12e588" name="Changes" comment="Modif workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/java/fr/esgi/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/gamePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/gamePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/playerName.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/playerName.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/src/main/resources/fr/esgi/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Couleur.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Couleur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Jeu.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Jeu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Joueur.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/business/Joueur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PlayerNameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PlayerNameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/PrimaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/controller/SecondaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/playerName.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/playerName.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/JeuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/JeuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/SonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/service/impl/SonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/ConfigUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/ConfigUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/TimerUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/fr/esgi/util/TimerUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simon/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/simon/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +51,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
+    &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;0nuc&quot;
-  }
-}</component>
+    }
+    }</component>
   <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/0nuc/simonGame.git&quot;,
     &quot;accountId&quot;: &quot;2f834896-b37b-4b44-8c87-8d1aa8f26950&quot;
-  }
-}</component>
+    }
+    }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,30 +76,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameControllerTest.testHandlePlayerInput_CorrectInput.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GameControllerTest.testHandlePlayerInput_WrongInput.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecondaryControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SecondaryControllerTest.testOpenPlayerNameScreen.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.fr.esgi in simon.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.java in simon.executor&quot;: &quot;Coverage&quot;,
-    &quot;Maven.simon [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/joris/Documents/simonGame&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.GameControllerTest.executor": "Run",
+    "JUnit.GameControllerTest.testHandlePlayerInput_CorrectInput.executor": "Run",
+    "JUnit.GameControllerTest.testHandlePlayerInput_WrongInput.executor": "Run",
+    "JUnit.SecondaryControllerTest.executor": "Run",
+    "JUnit.SecondaryControllerTest.testOpenPlayerNameScreen.executor": "Run",
+    "JUnit.fr.esgi in simon.executor": "Run",
+    "JUnit.java in simon.executor": "Coverage",
+    "Maven.simon [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/joris/Documents/simonGame",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\joris\IdeaProjects\simonGame\simon\src\main\resources\fr\esgi" />

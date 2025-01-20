@@ -2,6 +2,7 @@ package fr.esgi.controller;
 
 import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -204,7 +205,8 @@ public class GameController {
 
         // Vérifiez si l'index de playerInput est valide pour la séquence
         if (playerInput.size() >= sequence.size()) {
-            throw new IndexOutOfBoundsException("Index invalide : " + playerInput.size() + ". Taille de la séquence : " + sequence.size());
+            throw new IndexOutOfBoundsException(
+                    "Index invalide : " + playerInput.size() + ". Taille de la séquence : " + sequence.size());
         }
 
         // Vérifiez si le bouton correspond à l'étape actuelle de la séquence
@@ -292,7 +294,6 @@ public class GameController {
         });
     }
 
-
     private void playSound(String soundFile) {
         try {
             URL soundUrl = getClass().getResource(soundFile);
@@ -323,34 +324,49 @@ public class GameController {
 
     private void showRanking() {
         List<PlayerScore> ranking = new ArrayList<>();
+
         for (int i = 0; i < players.size(); i++) {
             ranking.add(new PlayerScore(players.get(i), scores.get(i)));
         }
 
         ranking.sort((p1, p2) -> Integer.compare(p2.getScore(), p1.getScore()));
 
+        System.out.println("🔹 Classement des joueurs :");
+        for (PlayerScore p : ranking) {
+            System.out.println(p.getName() + " - Score : " + p.getScore());
+        }
+
         if (!ranking.isEmpty()) {
             bestPlayerName = ranking.get(0).getName();
             bestPlayerSequence = new ArrayList<>(sequence);
+            bestPlayerSounds = new ArrayList<>(currentPlayerSounds);
         }
 
-        StringBuilder rankingMessage = new StringBuilder("Classement Final :\n");
+        StringBuilder rankingMessage = new StringBuilder("🏆 Classement Final 🏆\n\n");
         for (int i = 0; i < ranking.size(); i++) {
-            rankingMessage.append((i + 1)).append(". ").append(ranking.get(i).getName())
-                    .append(" - Score: ").append(ranking.get(i).getScore()).append("\n");
+            rankingMessage.append((i + 1)).append(". ")
+                    .append(ranking.get(i).getName())
+                    .append(" - Score: ")
+                    .append(ranking.get(i).getScore())
+                    .append("\n");
         }
 
-        lblScore.setText(rankingMessage.toString());
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Classement Final");
+        alert.setHeaderText("Voici les résultats !");
+        alert.setContentText(rankingMessage.toString());
+
+        alert.showAndWait();
 
         btnRestart.setDisable(false);
         btnRestart.setVisible(true);
+        btnReplayBest.setDisable(false);
+        btnReplayBest.setVisible(true);
 
         btnRed.setDisable(true);
         btnBlue.setDisable(true);
         btnGreen.setDisable(true);
         btnYellow.setDisable(true);
-        btnReplayBest.setDisable(false);
-        btnReplayBest.setVisible(true);
     }
 
     void resetAndRestartGame() {
