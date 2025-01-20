@@ -68,7 +68,7 @@ public class GameController {
         btnReplayBest.setOnAction(event -> replayBestPlayer());
         btnReplayBest.setDisable(true);
         btnReplayBest.setVisible(false);
-        List<String> colors = Arrays.asList("#FF0000", "#0000FF", "#008000", "#FFFF00", "#FFFFFF", "#000000");
+        List<String> colors = Arrays.asList("#FF0000", "#0000FF", "#008000", "#FFFF00");
         colorRed.getItems().addAll(colors);
         colorBlue.getItems().addAll(colors);
         colorGreen.getItems().addAll(colors);

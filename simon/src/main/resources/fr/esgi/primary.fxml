@@ -14,17 +14,17 @@
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
    <AnchorPane prefHeight="1091.0" prefWidth="1460.0">
-      <Button fx:id="btnSolo" layoutX="89.0" layoutY="396.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" onAction="#handleSoloClick" text="SOLO" textFill="WHITE">
+      <Button fx:id="btnSolo" layoutX="89.0" layoutY="396.0" mnemonicParsing="false" onAction="#handleSoloClick" prefHeight="121.0" prefWidth="570.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="SOLO" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
       </Button>
-      <Button fx:id="multijoueurButton" layoutX="81.0" layoutY="630.0" mnemonicParsing="false" onAction="#handleMultijoueurClick" prefHeight="121.0" prefWidth="582.0" style="-fx-background-color: none; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 5;" text="MULTIJOUEUR" textFill="WHITE">
+      <Button fx:id="multijoueurButton" layoutX="95.0" layoutY="578.0" mnemonicParsing="false" onAction="#handleMultijoueurClick" prefHeight="121.0" prefWidth="561.0" style="-fx-background-color: none; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 5;" text="MULTIJOUEUR" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
       </Button>
-      <Button fx:id="btnCredits" layoutX="89.0" layoutY="513.0" mnemonicParsing="false" prefHeight="121.0" prefWidth="570.0"  onAction="#handleCreditsClick"  style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="CRÉDIT" textFill="WHITE">
+      <Button fx:id="btnCredits" layoutX="95.0" layoutY="768.0" mnemonicParsing="false" onAction="#handleCreditsClick" prefHeight="121.0" prefWidth="561.0" style="-fx-background-color: none; -fx-border-radius: 10px; -fx-border-color: white; -fx-border-width: 5;" text="CRÉDIT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="38.0" />
          </font>
