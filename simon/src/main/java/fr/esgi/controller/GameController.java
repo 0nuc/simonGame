@@ -94,6 +94,11 @@ public class GameController {
         btnBlue.setOnAction(event -> handlePlayerInput(btnBlue));
         btnGreen.setOnAction(event -> handlePlayerInput(btnGreen));
         btnYellow.setOnAction(event -> handlePlayerInput(btnYellow));
+
+        applyColorStyleToComboBox(colorRed);
+        applyColorStyleToComboBox(colorBlue);
+        applyColorStyleToComboBox(colorGreen);
+        applyColorStyleToComboBox(colorYellow);
     }
 
     void startGame() {
@@ -185,7 +190,7 @@ public class GameController {
 
     private void highlightButton(Button button) {
         String originalColor = button.getStyle();
-        button.setStyle("-fx-background-color: white;");
+        button.setStyle("-fx-background-color: grey;");
         PauseTransition pause = new PauseTransition(Duration.seconds(0.5));
         pause.setOnFinished(event -> button.setStyle(originalColor));
         pause.play();
@@ -256,6 +261,37 @@ public class GameController {
 
         currentPlayerSounds.clear();
     }
+
+    private void applyColorStyleToComboBox(ComboBox<String> comboBox) {
+        comboBox.setCellFactory(lv -> new javafx.scene.control.ListCell<>() {
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                    setStyle("");
+                } else {
+                    setText(""); // Ne pas afficher le texte
+                    setStyle("-fx-background-color: " + item + ";"); // Afficher la couleur réelle
+                }
+            }
+        });
+
+        comboBox.setButtonCell(new javafx.scene.control.ListCell<>() {
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                    setStyle("");
+                } else {
+                    setText("");
+                    setStyle("-fx-background-color: " + item + ";");
+                }
+            }
+        });
+    }
+
 
     private void playSound(String soundFile) {
         try {
