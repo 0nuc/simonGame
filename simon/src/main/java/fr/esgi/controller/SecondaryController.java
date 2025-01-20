@@ -29,17 +29,19 @@ public class SecondaryController {
         circle4.setOnMouseClicked(event -> openPlayerNameScreen(4));
 
         // Action pour le bouton retour
-        btnRetour.setOnAction(event -> {
-            try {
-                // Charger la page principale
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/primary.fxml"));
-                Stage stage = (Stage) btnRetour.getScene().getWindow();
-                stage.setScene(new Scene(loader.load()));
-                stage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+        btnRetour.setOnAction(event -> handleRetour());
+    }
+
+    private void handleRetour() {
+        try {
+            // Charger la page principale
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fr/esgi/primary.fxml"));
+            Stage stage = (Stage) btnRetour.getScene().getWindow();
+            stage.setScene(new Scene(loader.load()));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();  // Affiche l'erreur dans la console
+        }
     }
 
     void openPlayerNameScreen(int numberOfPlayers) {
@@ -57,7 +59,7 @@ public class SecondaryController {
 
             stage.show();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace();  // Affiche l'erreur dans la console
         }
     }
 }
